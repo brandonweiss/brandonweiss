@@ -1,0 +1,19 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+p#warning {
+	width: 800px;
+	margin: 0px auto;
+	padding-top: 20px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+aside ul {
+	margin-left: 0px;
+}
+
+aside a#vcard {
+	line-height: 70px;
+}

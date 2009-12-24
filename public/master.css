@@ -1,0 +1,109 @@
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #000000;
+}
+
+a {	color: #000000; }
+
+#page {
+	width: 960px;
+	margin: 0px auto 50px auto;
+	overflow: hidden;
+}
+
+#container {
+	padding: 0px 14px;
+	overflow: hidden;
+}
+
+h1 {
+	margin: 70px 0px 30px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 110px;
+}
+
+h2 {
+	margin: 15px 0px 0px 0px;
+	font-size: 24px;
+}
+
+p { margin: 15px 0px; }
+
+.column { float: left; }
+
+article { width: 630px; }
+
+aside {
+	width: 242px;
+	margin-left: 60px;
+}
+
+aside ul {
+	margin-top: 5px;
+	padding-left: 0px;
+	list-style: none;
+}
+
+aside ul li a {
+	padding: 8px 0px;
+	text-decoration: none;
+	border-bottom: 1px solid #000000;
+	display: block;
+}
+
+aside ul li a span:after {
+	content: "\0020 \2192";
+	float: right;
+}
+
+aside ul li:first-child a { border-top: 0px solid #000000; }
+aside ul li:last-child a { border-bottom: 0px solid #000000; }
+
+aside dl {
+	width: 100%;
+	margin: 10px 0px;
+	padding: 0px;
+	line-height: 18px;
+	text-align: right;
+	float: left;
+}
+
+aside dl dt {
+	padding: 3px 0px;
+	font-weight: bold;
+	float: left;
+}
+
+aside dl dd { padding: 3px 0px; }
+
+aside a#vcard {
+	line-height: 60px;
+	text-align: left;
+	text-decoration: none;
+	font-size: 35px;
+	display: block;
+	clear: both;
+}
+
+aside a#vcard span {
+	font-weight: bold;
+	font-size: 85px;
+}
+
+footer {
+	padding-top: 30px;
+	clear: both;
+}
+
+footer p {
+	padding: 10px 0px;
+	border-top: 1px solid #000000;
+}
+
+footer p span { float: right; }
