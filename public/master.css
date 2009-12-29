@@ -46,6 +46,7 @@ aside {
 
 aside ul {
 	margin-top: 5px;
+	margin-left: 0px;
 	padding-left: 0px;
 	list-style: none;
 }
@@ -81,20 +82,6 @@ aside dl dt {
 }
 
 aside dl dd { padding: 3px 0px; }
-
-aside a#vcard {
-	line-height: 60px;
-	text-align: left;
-	text-decoration: none;
-	font-size: 35px;
-	display: block;
-	clear: both;
-}
-
-aside a#vcard span {
-	font-weight: bold;
-	font-size: 85px;
-}
 
 footer {
 	padding-top: 30px;
