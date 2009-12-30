@@ -9,7 +9,7 @@ get '/' do
   birthday = Date.strptime("1985-02-04")
   @age = (Date.today - birthday).to_i / 365
   	
-  erb :iphone
+  erb :index
 end
 
 get '/linked/*' do
