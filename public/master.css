@@ -8,7 +8,13 @@ body {
 	color: #000000;
 }
 
-a {	color: #000000; }
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted #000000;
+    color: #000000;
+}
+
+a:hover { border-bottom-style: solid; }
 
 #page {
 	width: 960px;
@@ -51,11 +57,32 @@ aside ul {
 	list-style: none;
 }
 
+aside ul li {
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+aside ul li.tumblr { background-image: url('images/tumblr.png'); }
+aside ul li.twitter { background-image: url('images/twitter.png'); }
+aside ul li.facebook { background-image: url('images/facebook.png'); }
+aside ul li.gowalla { background-image: url('images/gowalla.png'); }
+aside ul li.github { background-image: url('images/github.png'); }
+aside ul li.last-fm { background-image: url('images/last-fm.png'); }
+aside ul li.yelp { background-image: url('images/yelp.png'); }
+aside ul li.ember { background-image: url('images/ember.png'); }
+aside ul li.gdgt { background-image: url('images/gdgt.png'); }
+aside ul li.vimeo { background-image: url('images/vimeo.png'); }
+aside ul li.amazon-wish-list { background-image: url('images/amazon-wish-list.png'); }
+
 aside ul li a {
-	padding: 8px 0px;
-	text-decoration: none;
-	border-bottom: 1px solid #000000;
+	padding: 12px 0px 12px 45px;
+	border-bottom: 1px dotted #000000;
 	display: block;
+}
+
+aside ul li a:hover {
+    padding-left: 50px;
+    border-bottom-style: dotted;
 }
 
 aside ul li a span:after {
@@ -63,8 +90,8 @@ aside ul li a span:after {
 	float: right;
 }
 
-aside ul li:first-child a { border-top: 0px solid #000000; }
-aside ul li:last-child a { border-bottom: 0px solid #000000; }
+aside ul li:first-child a { border-top: 0px; }
+aside ul li:last-child a { border-bottom: 0px; }
 
 aside dl {
 	width: 100%;
