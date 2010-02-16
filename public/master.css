@@ -59,7 +59,7 @@ aside ul {
 
 aside ul li {
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: 5px center;
 }
 
 aside ul li.tumblr { background-image: url('images/tumblr.png'); }
@@ -75,7 +75,7 @@ aside ul li.vimeo { background-image: url('images/vimeo.png'); }
 aside ul li.amazon-wish-list { background-image: url('images/amazon-wish-list.png'); }
 
 aside ul li a {
-	padding: 12px 0px 12px 45px;
+	padding: 12px 0px 12px 47px;
 	border-bottom: 1px dotted #000000;
 	display: block;
 }
