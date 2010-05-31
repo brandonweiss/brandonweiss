@@ -1,14 +1,14 @@
-require 'rubygems'
 require 'sinatra'
+require 'date'
 
 get '/', :agent => /iPhone/ do
   erb :iphone
 end
 
 get '/' do
-  birthday = Date.strptime("1985-02-04")
+  birthday = Date.strptime('1985-02-04', '%F')
   @age = (Date.today - birthday).to_i / 365
-  	
+
   erb :index
 end
 
