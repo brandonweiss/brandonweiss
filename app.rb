@@ -1,6 +1,3 @@
-require 'sinatra'
-require 'date'
-
 get '/', :agent => /iPhone/ do
   erb :iphone
 end
