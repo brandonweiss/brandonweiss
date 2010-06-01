@@ -75,8 +75,9 @@ aside ul li.vimeo { background-image: url('images/vimeo.png'); }
 aside ul li.amazon-wish-list { background-image: url('images/amazon-wish-list.png'); }
 
 aside ul li a {
-	padding: 12px 0px 12px 47px;
+	padding: 12px 0px 12px 50px;
 	border-bottom: 1px dotted #000000;
+	font-size: 15px;
 	display: block;
 }
 
@@ -108,7 +109,10 @@ aside dl dt {
 	float: left;
 }
 
-aside dl dd { padding: 3px 0px; }
+aside dl dd {
+  padding: 3px 0px;
+  font-size: 15px;
+}
 
 footer {
 	padding-top: 30px;
