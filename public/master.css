@@ -1,5 +1,16 @@
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
+@-webkit-keyframes fade-in {
+	0%    { opacity: 0; }
+	50%   { opacity: 0; }
+	100%  { opacity: 1; }
+}
+
+body {
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 1.5s;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
