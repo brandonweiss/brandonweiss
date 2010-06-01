@@ -9,9 +9,9 @@ body {
 }
 
 a {
-    text-decoration: none;
-    border-bottom: 1px dotted #000000;
-    color: #000000;
+  text-decoration: none;
+  border-bottom: 1px dotted #000000;
+  color: #000000;
 }
 
 a:hover { border-bottom-style: solid; }
@@ -58,8 +58,8 @@ aside ul {
 }
 
 aside ul li {
-    background-repeat: no-repeat;
-    background-position: 5px center;
+  background-repeat: no-repeat;
+  background-position: 5px center;
 }
 
 aside ul li.tumblr { background-image: url('images/tumblr.png'); }
@@ -82,8 +82,8 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-    padding-left: 50px;
-    border-bottom-style: dotted;
+  padding-left: 53px;
+  border-bottom-style: dotted;
 }
 
 aside ul li a span:after {
@@ -103,16 +103,15 @@ aside dl {
 	float: left;
 }
 
+aside dl dt,
+aside dl dd { padding: 3px 0px; }
+
 aside dl dt {
-	padding: 3px 0px;
 	font-weight: bold;
 	float: left;
 }
 
-aside dl dd {
-  padding: 3px 0px;
-  font-size: 15px;
-}
+aside dl dd {  font-size: 15px; }
 
 footer {
 	padding-top: 30px;
