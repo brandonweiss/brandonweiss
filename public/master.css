@@ -1,22 +1,22 @@
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
 @-webkit-keyframes fade-in {
-	0%    { opacity: 0; }
-	50%   { opacity: 0; }
-	100%  { opacity: 1; }
+  0%    { opacity: 0; }
+  50%   { opacity: 0; }
+  100%  { opacity: 1; }
 }
 
 body {
-	-webkit-animation-name: fade-in;
-	-webkit-animation-duration: 1.5s;
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 1.5s;
 }
 
 body {
-	margin: 0px;
-	padding: 0px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 16px;
-	color: #000000;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
 }
 
 a {
@@ -28,26 +28,26 @@ a {
 a:hover { border-bottom-style: solid; }
 
 #page {
-	width: 960px;
-	margin: 0px auto 50px auto;
-	overflow: hidden;
+  width: 960px;
+  margin: 0px auto 50px auto;
+  overflow: hidden;
 }
 
 #container {
-	padding: 0px 14px;
-	overflow: hidden;
+  padding: 0px 14px;
+  overflow: hidden;
 }
 
 h1 {
-	margin: 70px 0px 30px 0px;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 110px;
+  margin: 70px 0px 30px 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 110px;
 }
 
 h2 {
-	margin: 15px 0px 0px 0px;
-	font-size: 24px;
+  margin: 15px 0px 0px 0px;
+  font-size: 24px;
 }
 
 p { margin: 15px 0px; }
@@ -57,15 +57,15 @@ p { margin: 15px 0px; }
 article { width: 630px; }
 
 aside {
-	width: 242px;
-	margin-left: 60px;
+  width: 242px;
+  margin-left: 60px;
 }
 
 aside ul {
-	margin-top: 5px;
-	margin-left: 0px;
-	padding-left: 0px;
-	list-style: none;
+  margin-top: 5px;
+  margin-left: 0px;
+  padding-left: 0px;
+  list-style: none;
 }
 
 aside ul li {
@@ -87,10 +87,10 @@ aside ul li.vimeo { background-image: url('images/vimeo.png'); }
 aside ul li.amazon-wish-list { background-image: url('images/amazon-wish-list.png'); }
 
 aside ul li a {
-	padding: 12px 0px 12px 50px;
-	border-bottom: 1px dotted #000000;
-	font-size: 15px;
-	display: block;
+  padding: 12px 0px 12px 50px;
+  border-bottom: 1px dotted #000000;
+  font-size: 15px;
+  display: block;
 }
 
 aside ul li a:hover {
@@ -99,40 +99,40 @@ aside ul li a:hover {
 }
 
 aside ul li a span:after {
-	content: "\0020 \2192";
-	float: right;
+  content: "\0020 \2192";
+  float: right;
 }
 
 aside ul li:first-child a { border-top: 0px; }
 aside ul li:last-child a { border-bottom: 0px; }
 
 aside dl {
-	width: 100%;
-	margin: 10px 0px;
-	padding: 0px;
-	line-height: 18px;
-	text-align: right;
-	float: left;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0px;
+  line-height: 18px;
+  text-align: right;
+  float: left;
 }
 
 aside dl dt,
 aside dl dd { padding: 3px 0px; }
 
 aside dl dt {
-	font-weight: bold;
-	float: left;
+  font-weight: bold;
+  float: left;
 }
 
 aside dl dd {  font-size: 15px; }
 
 footer {
-	padding-top: 30px;
-	clear: both;
+  padding-top: 30px;
+  clear: both;
 }
 
 footer p {
-	padding: 10px 0px;
-	border-top: 1px solid #000000;
+  padding: 10px 0px;
+  border-top: 1px solid #000000;
 }
 
 footer p span { float: right; }
