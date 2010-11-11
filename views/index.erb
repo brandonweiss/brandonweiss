@@ -12,8 +12,15 @@
 
   <link rel="stylesheet" href="master.css" type="text/css" media="screen" />
 
-  <script src="http://www.google.com/jsapi" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" charset="utf-8">  google.load("jquery", "1"); </script>
+  <script src="http://www.google.com/jsapi"></script>
+  <script> google.load("jquery", "1"); </script>
+  <script src="http://platform.twitter.com/anywhere.js?id=UAR4ct9QKvhVTsp8c9w&v=1"></script>
+
+  <script>
+    twttr.anywhere(function(twitter) {
+      twitter.hovercards();
+    });
+  </script>
 
   <!--[if IE]>
     <script src="js/html5.js"></script>
