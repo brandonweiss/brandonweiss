@@ -18,7 +18,10 @@
 
   <script>
     twttr.anywhere(function(twitter) {
-      twitter.hovercards();
+      twitter("dl dd").hovercards({
+        infer: true,
+        expanded: true
+      });
     });
   </script>
 
@@ -75,7 +78,7 @@
           <dd><a class="url" href="xmpp:brandon@anti-pattern.com">brandon@anti-pattern.com</a></dd>
 
           <dt>Twitter</dt>
-          <dd><a class="url" href="http://twitter.com/brandon_weiss">@brandon_weiss </a></dd>
+          <dd><a class="url" href="http://twitter.com/brandon_weiss">@brandon_weiss</a></dd>
         </dl>
       </aside>
 
