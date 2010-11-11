@@ -82,12 +82,11 @@ aside ul li.facebook { background-image: url('images/facebook.png'); }
 aside ul li.gowalla { background-image: url('images/gowalla.png'); }
 aside ul li.github { background-image: url('images/github.png'); }
 aside ul li.lanyrd { background-image: url('images/lanyrd.png'); }
-aside ul li.last-fm { background-image: url('images/last-fm.png'); }
+aside ul li.lastfm { background-image: url('images/lastfm.png'); }
 aside ul li.yelp { background-image: url('images/yelp.png'); }
-aside ul li.ember { background-image: url('images/ember.png'); }
 aside ul li.gdgt { background-image: url('images/gdgt.png'); }
 aside ul li.vimeo { background-image: url('images/vimeo.png'); }
-aside ul li.amazon-wish-list { background-image: url('images/amazon-wish-list.png'); }
+aside ul li.amazon { background-image: url('images/amazon.png'); }
 
 aside ul li a {
   padding: 12px 0px 12px 50px;
