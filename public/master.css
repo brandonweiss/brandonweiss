@@ -64,49 +64,57 @@ aside {
   margin-left: 60px;
 }
 
-aside ul {
+aside ul#projects {
+  list-style: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+aside ul#projects li { margin: 5px 0px; }
+
+aside ul#social {
   margin-top: 5px;
   margin-left: 0px;
   padding-left: 0px;
   list-style: none;
 }
 
-aside ul li {
+aside ul#social li {
   background-repeat: no-repeat;
   background-position: 5px center;
 }
 
-aside ul li.tumblr { background-image: url('images/tumblr.png'); }
-aside ul li.twitter { background-image: url('images/twitter.png'); }
-aside ul li.facebook { background-image: url('images/facebook.png'); }
-aside ul li.gowalla { background-image: url('images/gowalla.png'); }
-aside ul li.github { background-image: url('images/github.png'); }
-aside ul li.lanyrd { background-image: url('images/lanyrd.png'); }
-aside ul li.lastfm { background-image: url('images/lastfm.png'); }
-aside ul li.yelp { background-image: url('images/yelp.png'); }
-aside ul li.gdgt { background-image: url('images/gdgt.png'); }
-aside ul li.vimeo { background-image: url('images/vimeo.png'); }
-aside ul li.amazon { background-image: url('images/amazon.png'); }
+aside ul#social li.tumblr { background-image: url('images/tumblr.png'); }
+aside ul#social li.twitter { background-image: url('images/twitter.png'); }
+aside ul#social li.facebook { background-image: url('images/facebook.png'); }
+aside ul#social li.gowalla { background-image: url('images/gowalla.png'); }
+aside ul#social li.github { background-image: url('images/github.png'); }
+aside ul#social li.lanyrd { background-image: url('images/lanyrd.png'); }
+aside ul#social li.lastfm { background-image: url('images/lastfm.png'); }
+aside ul#social li.yelp { background-image: url('images/yelp.png'); }
+aside ul#social li.gdgt { background-image: url('images/gdgt.png'); }
+aside ul#social li.vimeo { background-image: url('images/vimeo.png'); }
+aside ul#social li.amazon { background-image: url('images/amazon.png'); }
 
-aside ul li a {
+aside ul#social li a {
   padding: 12px 0px 12px 50px;
   border-bottom: 1px dotted #000000;
   font-size: 15px;
   display: block;
 }
 
-aside ul li a:hover {
+aside ul#social li a:hover {
   padding-left: 53px;
   border-bottom-style: dotted;
 }
 
-aside ul li a span:after {
+aside ul#social li a span:after {
   content: "\0020 \2192";
   float: right;
 }
 
-aside ul li:first-child a { border-top: 0px; }
-aside ul li:last-child a { border-bottom: 0px; }
+aside ul#social li:first-child a { border-top: 0px; }
+aside ul#social li:last-child a { border-bottom: 0px; }
 
 aside dl {
   width: 100%;
