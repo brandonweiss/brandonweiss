@@ -61,6 +61,7 @@ p {
 }
 
 .column { float: left; }
+span.strike { text-decoration: line-through; }
 
 article { width: 630px; }
 
