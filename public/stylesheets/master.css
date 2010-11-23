@@ -55,6 +55,11 @@ p {
   line-height: 22px;
 }
 
+.hidden {
+	position: absolute;
+	left: -9999px;
+}
+
 .column { float: left; }
 
 article { width: 630px; }
@@ -84,17 +89,17 @@ aside ul#social li {
   background-position: 5px center;
 }
 
-aside ul#social li.tumblr { background-image: url('images/tumblr.png'); }
-aside ul#social li.twitter { background-image: url('images/twitter.png'); }
-aside ul#social li.facebook { background-image: url('images/facebook.png'); }
-aside ul#social li.gowalla { background-image: url('images/gowalla.png'); }
-aside ul#social li.github { background-image: url('images/github.png'); }
-aside ul#social li.lanyrd { background-image: url('images/lanyrd.png'); }
-aside ul#social li.lastfm { background-image: url('images/lastfm.png'); }
-aside ul#social li.yelp { background-image: url('images/yelp.png'); }
-aside ul#social li.gdgt { background-image: url('images/gdgt.png'); }
-aside ul#social li.vimeo { background-image: url('images/vimeo.png'); }
-aside ul#social li.amazon { background-image: url('images/amazon.png'); }
+aside ul#social li.tumblr { background-image: url('../images/tumblr.png'); }
+aside ul#social li.twitter { background-image: url('../images/twitter.png'); }
+aside ul#social li.facebook { background-image: url('../images/facebook.png'); }
+aside ul#social li.gowalla { background-image: url('../images/gowalla.png'); }
+aside ul#social li.github { background-image: url('../images/github.png'); }
+aside ul#social li.lanyrd { background-image: url('../images/lanyrd.png'); }
+aside ul#social li.lastfm { background-image: url('../images/lastfm.png'); }
+aside ul#social li.yelp { background-image: url('../images/yelp.png'); }
+aside ul#social li.gdgt { background-image: url('../images/gdgt.png'); }
+aside ul#social li.vimeo { background-image: url('../images/vimeo.png'); }
+aside ul#social li.amazon { background-image: url('../images/amazon.png'); }
 
 aside ul#social li a {
   padding: 12px 0px 12px 50px;

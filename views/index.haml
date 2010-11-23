@@ -7,8 +7,8 @@
     %link{ :ref => 'openid.server', :href => 'http://www.myopenid.com/server' }
     %link{ :ref => 'openid.delegate', :href => 'http://brandonweiss.myopenid.com/' }
 
-    %link{ :rel => 'shortcut icon', :href => 'favicon.png' }
-    %link{ :rel => 'stylesheet', :href => 'master.css' }
+    %link{ :rel => 'shortcut icon', :href => '/favicon.png' }
+    %link{ :rel => 'stylesheet', :href => '/stylesheets/master.css' }
 
     %script{ :src => 'http://www.google.com/jsapi' }
     :javascript
@@ -29,6 +29,10 @@
     #page.vcard
       %header
         %h1.fn Brandon Weiss
+        %p.hidden
+          %span.role Web Developer
+          from
+          %span.location Chicago
       #container
         %article.column
           %h2 About Me
@@ -58,26 +62,16 @@
           %h2 Elsewhere
 
           %ul#social
-            %li.tumblr
-              %a{ :href => 'http://itstartswithscience.com' } Blog
-            %li.twitter
-              %a{ :href => 'http://twitter.com/brandon_weiss' } Twitter
-            %li.facebook
-              %a{ :href => 'http://facebook.com/brandon.weiss' } Facebook
-            %li.gowalla
-              %a{ :href => 'http://gowalla.com/brandonweiss' } Gowalla
-            %li.github
-              %a{ :href => 'http://github.com/brandonweiss' } Github
-            %li.lanyrd
-              %a{ :href => 'http://lanyrd.com/people/brandon_weiss' } Lanyrd
-            %li.lastfm
-              %a{ :href => 'http://www.last.fm/user/brandonweiss' } Last.fm
-            %li.yelp
-              %a{ :href => 'http://brandonweiss.yelp.com' } Yelp
-            %li.vimeo
-              %a{ :href => 'http://vimeo.com/brandonweiss' } Vimeo
-            %li.amazon
-              %a{ :href => 'http://www.amazon.com/wishlist/3CGRL6BINQRFR' } Amazon Wish List
+            %li.tumblr.url <a href="http://itstartswithscience.com"><span>Blog</span></a>
+            %li.twitter.url <a href="http://twitter.com/brandon_weiss"><span>Twitter</span></a>
+            %li.facebook.url <a href="http://facebook.com/brandon.weiss"><span>Facebook</span></a>
+            %li.gowalla.url <a href="http://gowalla.com/brandonweiss"><span>Gowalla</span></a>
+            %li.github.url <a href="http://github.com/brandonweiss"><span>GitHub</span></a>
+            %li.lanyrd.url <a href="http://lanyrd.com/people/brandon_weiss"><span>Lanyrd</span></a>
+            %li.lastfm.url <a href="http://www.last.fm/user/brandonweiss"><span>Last.fm</span></a>
+            %li.yelp.url <a href="http://brandonweiss.yelp.com"><span>Yelp</span></a>
+            %li.vimeo.url <a href="http://vimeo.com/brandonweiss"><span>Vimeo</span></a>
+            %li.amazon.url <a href="http://www.amazon.com/wishlist/3CGRL6BINQRFR/"><span>Amazon Wish List</span></a>
 
           %h2 Contact
 
@@ -85,23 +79,18 @@
             %dt Email
             %dd
               %a.email{ :href => 'mailto:brandon@anti-pattern.com' } brandon@anti-pattern.com
+
             %dt Jabber
             %dd
-              %a.url{ :href => 'xmpp:brandon@anti-pattern.com' } brandon@anti-pattern.com
+              %a{ :href => 'xmpp:brandon@anti-pattern.com' } brandon@anti-pattern.com
+
             %dt Twitter
             %dd
-              %a.url{ :href => 'http://twitter.com/brandon_weiss' } @brandon_weiss
+              %a{ :href => 'http://twitter.com/brandon_weiss' } @brandon_weiss
       %footer
         %p
-          Inspired by
-          %a{ :href => 'http://timvandamme.com' } Tim Van Damme
-          \. Icons by
-          %a{ :href => 'http://paulrobertlloyd.com/2009/06/social_media_icons' } Paul Robert Lloyd
-          \.
-          %span
-            %q Illusion is the first of all pleasures.
-            —
-            %cite Oscar Wilde
+          Inspired by <a href="http://timvandamme.com/">Tim Van Damme</a>. Icons by <a href="http://paulrobertlloyd.com/2009/06/social_media_icons">Paul Robert Lloyd</a>.
+          <span><q>Illusion is the first of all pleasures.</q> — <cite>Oscar Wilde</cite></span>
 
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
