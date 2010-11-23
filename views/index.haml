@@ -1,0 +1,114 @@
+!!!
+%html
+  %head
+    %meta{ :charset => 'utf-8' }
+    %title Brandon Weiss, Web Developer
+
+    %link{ :ref => 'openid.server', :href => 'http://www.myopenid.com/server' }
+    %link{ :ref => 'openid.delegate', :href => 'http://brandonweiss.myopenid.com/' }
+
+    %link{ :rel => 'shortcut icon', :href => 'favicon.png' }
+    %link{ :rel => 'stylesheet', :href => 'master.css' }
+
+    %script{ :src => 'http://www.google.com/jsapi' }
+    :javascript
+      google.load("jquery", "1");
+
+    %script{ :src => 'http://platform.twitter.com/anywhere.js?id=UAR4ct9QKvhVTsp8c9w&v=1' }
+    :javascript
+      twttr.anywhere(function(twitter) {
+        twitter("dl dd").hovercards({
+          infer: true,
+          expanded: true
+        });
+      });
+
+    /[if IE]
+      %script{ :src => 'javascripts/html5.js' }
+  %body
+    #page.vcard
+      %header
+        %h1.fn Brandon Weiss
+      #container
+        %article.column
+          %h2 About Me
+
+          %p I am a #{ @age } year old web developer living in Chicago.
+          %p I love making new things, learning new things, and doing new things. I am probably a so-called “serial hobbyist.”
+          %p I take unnatural pleasure in pruning my RSS feeds, removing Facebook friends, and freeing up hard disk space.
+          %p I just <a href="http://typetees.threadless.com/product/1543/I_can_t_get_enough_minimalism">can’t get enough minimalism</a>.
+          %p I am a vegetarian and have been so my entire life. But I do eat fish. I guess that makes me a pescetarian.
+          %p I am <em>obsessed</em> with <a href="http://en.wikipedia.org/wiki/Snowboarding">the Shred</a>.
+          %p I believe that <a href="http://37signals.com/svn/posts/1741-how-you-do-anything-is-how-you-do-everything">how you do anything is how you do everything</a>.
+          %p I’m pretty much in love with everything Apple makes; I have a maxed out 15″ MacBook Pro from early 2010, an iPhone 3GS and sometime soon I'll be getting an iPad.
+          %p I believe if something is easy it’s probably not worth doing.
+          %p <strike>I <a href="http://www.daretorant.com/?p=229">hate IE6</a> and will not develop for it on <a href="http://ie6nomore.com/">principle</a>.</strike> It's been so long I don't even remember what IE6 is any more. It's better this way.
+          %p I believe the <a href="http://37signals.com/svn/posts/1626-the-most-powerful-word-is-no">word “no”</a> is not used nearly often enough.
+          %p I really like writing lists.
+
+        %aside.column
+          %h2 Projects
+
+          %ul#projects
+            %li
+              %a{ :href => 'http://aristocrats.co' } The Aristocrats
+            %li
+              %a{ :href => 'http://myze.us' } MyZeus
+
+          %h2 Elsewhere
+
+          %ul#social
+            %li.tumblr
+              %a{ :href => 'http://itstartswithscience.com' } Blog
+            %li.twitter
+              %a{ :href => 'http://twitter.com/brandon_weiss' } Twitter
+            %li.facebook
+              %a{ :href => 'http://facebook.com/brandon.weiss' } Facebook
+            %li.gowalla
+              %a{ :href => 'http://gowalla.com/brandonweiss' } Gowalla
+            %li.github
+              %a{ :href => 'http://github.com/brandonweiss' } Github
+            %li.lanyrd
+              %a{ :href => 'http://lanyrd.com/people/brandon_weiss' } Lanyrd
+            %li.lastfm
+              %a{ :href => 'http://www.last.fm/user/brandonweiss' } Last.fm
+            %li.yelp
+              %a{ :href => 'http://brandonweiss.yelp.com' } Yelp
+            %li.vimeo
+              %a{ :href => 'http://vimeo.com/brandonweiss' } Vimeo
+            %li.amazon
+              %a{ :href => 'http://www.amazon.com/wishlist/3CGRL6BINQRFR' } Amazon Wish List
+
+          %h2 Contact
+
+          %dl
+            %dt Email
+            %dd
+              %a.email{ :href => 'mailto:brandon@anti-pattern.com' } brandon@anti-pattern.com
+            %dt Jabber
+            %dd
+              %a.url{ :href => 'xmpp:brandon@anti-pattern.com' } brandon@anti-pattern.com
+            %dt Twitter
+            %dd
+              %a.url{ :href => 'http://twitter.com/brandon_weiss' } @brandon_weiss
+      %footer
+        %p
+          Inspired by
+          %a{ :href => 'http://timvandamme.com' } Tim Van Damme
+          \. Icons by
+          %a{ :href => 'http://paulrobertlloyd.com/2009/06/social_media_icons' } Paul Robert Lloyd
+          \.
+          %span
+            %q Illusion is the first of all pleasures.
+            —
+            %cite Oscar Wilde
+
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+    :javascript
+      try {
+        var pageTracker = _gat._getTracker("UA-306010-3");
+        pageTracker._trackPageview();
+      } catch(err) {}
