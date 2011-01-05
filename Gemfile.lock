@@ -3,6 +3,8 @@ GEM
   specs:
     haml (3.0.18)
     rack (1.2.1)
+    shotgun (0.8)
+      rack (>= 1.0)
     sinatra (1.0)
       rack (>= 1.0)
 
@@ -11,4 +13,5 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  shotgun
   sinatra

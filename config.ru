@@ -1,9 +1,8 @@
 require 'rubygems'
 require 'bundler'
-Bundler.setup
+Bundler.require(:default, ENV['RACK_ENV'])
 
-require 'sinatra'
 require 'date'
-require 'app'
+require './app'
 
-run Sinatra::Application
+run App
