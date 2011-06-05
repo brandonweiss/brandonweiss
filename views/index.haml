@@ -2,7 +2,7 @@
 %html
   %head
     %meta{ :charset => 'utf-8' }
-    %title Brandon Weiss, Web Developer
+    %title Brandon Weiss, Programmer
 
     %link{ :rel => 'openid.server', :href => 'http://www.myopenid.com/server' }
     %link{ :rel => 'openid.delegate', :href => 'http://brandonweiss.myopenid.com/' }
@@ -26,14 +26,14 @@
     /[if IE]
       %script{ :src => 'javascripts/html5.js' }
   %body
-    #page.vcard
+    #page(itemscope itemtype='http://schema.org/Person')
       %header
-        %h1.fn Brandon Weiss
+        %h1(itemprop='name') Brandon Weiss
         %p.hidden
-          %span.role Web Developer
+          %span(itemprop='jobTitle') Programmer
           from
-          %span.adr
-            %span.locality Chicago
+          %span(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
+            %span(itemprop='addressLocality') Chicago
       #container
         %article.column
           %h2 About Me
@@ -54,41 +54,57 @@
         %aside.column
           %h2 Projects
 
-          %ul#projects
+          %ul#projects(itemprop='memberOf' itemscope itemtype='http://schema.org/Organization')
             %li
-              %a.org{ :href => 'http://aristocrats.co' } The Aristocrats
+              %a(itemprop='url name' href='http://aristocrats.co') The Aristocrats
             %li
-              %a.org{ :href => 'http://myze.us' } MyZeus
+              %a(itemprop='url name' href='http://myze.us') MyZeus
 
           %h2 Elsewhere
 
           %ul#social
-            %li.website <a href="http://anti-pattern.com" rel="me" class="url"><span>Blog</span></a>
-            %li.tumblr <a href="http://itstartswithscience.com" rel="me" class="url"><span>Tumblelog</span></a>
-            %li.twitter <a href="http://twitter.com/brandon_weiss" rel="me" class="url"><span>Twitter</span></a>
-            %li.facebook <a href="http://facebook.com/brandon.weiss" rel="me" class="url"><span>Facebook</span></a>
-            %li.gowalla <a href="http://gowalla.com/brandonweiss" rel="me" class="url"><span>Gowalla</span></a>
-            %li.github <a href="http://github.com/brandonweiss" rel="me" class="url"><span>GitHub</span></a>
-            %li.lanyrd <a href="http://lanyrd.com/people/brandon_weiss" rel="me" class="url"><span>Lanyrd</span></a>
-            ~# %li.lastfm <a href="http://www.last.fm/user/brandonweiss" rel="me" class="url"><span>Last.fm</span></a>
-            ~# %li.yelp <a href="http://brandonweiss.yelp.com" rel="me" class="url"><span>Yelp</span></a>
-            %li.vimeo <a href="http://vimeo.com/brandonweiss" rel="me" class="url"><span>Vimeo</span></a>
-            %li.amazon <a href="http://www.amazon.com/wishlist/3CGRL6BINQRFR/" rel="me" class="url"><span>Amazon Wish List</span></a>
+            %li.website
+              %a(itemprop='url' href='http://anti-pattern.com')
+                %span Blog
+            %li.tumblr
+              %a(itemprop='url' href='http://itstartswithscience.com')
+                %span Tumblelog
+            %li.twitter
+              %a(itemprop='url' href='http://twitter.com/brandon_weiss')
+                %span Twitter
+            %li.facebook
+              %a(itemprop='url' href='http://facebook.com/brandon.weiss')
+                %span Facebook
+            %li.gowalla
+              %a(itemprop='url' href='http://gowalla.com/brandonweiss')
+                %span Gowalla
+            %li.github
+              %a(itemprop='url' href='http://github.com/brandonweiss')
+                %span GitHub
+            %li.lanyrd
+              %a(itemprop='url' href='http://lanyrd.com/people/brandon_weiss')
+                %span Lanyrd
+            %li.vimeo
+              %a(itemprop='url' href='http://vimeo.com/brandonweiss')
+                %span Vimeo
+            %li.amazon
+              %a(itemprop='url' href='http://www.amazon.com/wishlist/3CGRL6BINQRFR/')
+                %span Amazon Wish List
 
           %h2 Contact
 
           %dl
             %dt Email
             %dd
-              %a.email{ :href => 'mailto:brandon@anti-pattern.com' } brandon@anti-pattern.com
+              %a(itemprop='email' href='mailto:brandon@anti-pattern.com') brandon@anti-pattern.com
 
             %dt Jabber
             %dd
-              %a{ :href => 'xmpp:brandon@anti-pattern.com' } brandon@anti-pattern.com
+              %a(href='xmpp:brandon@anti-pattern.com') brandon@anti-pattern.com
 
             %dt Twitter
             %dd
-              %a{ :href => 'http://twitter.com/brandon_weiss' } @brandon_weiss
+              %a(href='http://twitter.com/brandon_weiss') @brandon_weiss
       %footer
         %p
           Inspired by <a href="http://timvandamme.com/">Tim Van Damme</a>. Icons by <a href="http://paulrobertlloyd.com/2009/06/social_media_icons">Paul Robert Lloyd</a>.
@@ -107,15 +123,3 @@
       })();
 
     <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/261000ns.gif" /></p></noscript>
-
-    :javascript
-      (function() {
-        var t = document.createElement('script');
-        t.type = 'text/javascript'; t.async = true;
-        t.id = 'gauges-tracker';
-        t.setAttribute('data-site-id',
-                       '4d63cbd0a219863d81000002');
-        t.src = 'http://gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
