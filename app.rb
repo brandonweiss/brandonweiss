@@ -1,7 +1,3 @@
-# get '/', :agent => /iPhone/ do
-#   erb :iphone
-# end
-
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
 
