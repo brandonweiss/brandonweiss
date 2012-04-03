@@ -1,20 +1,20 @@
 !!! 5
 %html
   %head
-    %meta{ charset: 'utf-8' }
+    %meta{ charset: "utf-8" }
     %title Brandon Weiss, Programmer
 
-    %link{ rel: 'openid.server',   href: 'http://www.myopenid.com/server' }
-    %link{ rel: 'openid.delegate', href: 'http://brandonweiss.myopenid.com/' }
+    %link{ rel: "openid.server",   href: "http://www.myopenid.com/server" }
+    %link{ rel: "openid.delegate", href: "http://brandonweiss.myopenid.com/" }
 
-    %link{ rel: 'shortcut icon', href: '/favicon.png' }
-    %link{ rel: 'stylesheet',    href: '/stylesheets/master.css' }
+    %link{ rel: "shortcut icon", href: "/favicon.png" }
+    %link{ rel: "stylesheet",    href: "/stylesheets/master.css" }
 
-    %script{ src: 'http://www.google.com/jsapi' }
+    %script{ src: "http://www.google.com/jsapi" }
     :javascript
       google.load("jquery", "1");
 
-    %script{ src: 'http://platform.twitter.com/anywhere.js?id=UAR4ct9QKvhVTsp8c9w&v=1' }
+    %script{ src: "http://platform.twitter.com/anywhere.js?id=UAR4ct9QKvhVTsp8c9w&v=1" }
     :javascript
       twttr.anywhere(function(twitter) {
         twitter("dl dd").hovercards({
@@ -24,17 +24,17 @@
       });
 
     /[if IE]
-      %script{ src: 'javascripts/html5.js' }
+      %script{ src: "javascripts/html5.js" }
   %body
-    #page(itemscope itemtype='http://schema.org/Person')
+    #page(itemscope itemtype="http://schema.org/Person")
       %header
-        %img.hidden(itemprop='image' src='/images/avatar.png')
-        %h1(itemprop='name') Brandon Weiss
+        %img.hidden(itemprop="image" src="/images/avatar.png")
+        %h1(itemprop="name") Brandon Weiss
         %p.hidden
-          %span(itemprop='jobTitle') Programmer
+          %span(itemprop="jobTitle") Programmer
           from
-          %span(itemprop='address' itemscope itemtype='http://schema.org/PostalAddress')
-            %span(itemprop='addressLocality') Chicago
+          %span(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+            %span(itemprop="addressLocality") Chicago
       #container
         %article.column
           %h2 About Me
@@ -56,46 +56,46 @@
           %h2 Projects
 
           %ul#projects
-            %li(itemprop='memberOf' itemscope itemtype='http://schema.org/Organization')
-              %a(itemprop='url name' href='http://cocolabs.co') Coconut Labs
-            %li(itemprop='memberOf' itemscope itemtype='http://schema.org/Organization')
-              %a(itemprop='url name' href='http://myze.us') MyZeus
+            %li(itemprop="memberOf" itemscope itemtype="http://schema.org/Organization")
+              %a(itemprop="url name" href="http://cocolabs.co") Coconut Labs
+            %li(itemprop="memberOf" itemscope itemtype="http://schema.org/Organization")
+              %a(itemprop="url name" href="http://myze.us") MyZeus
 
           %h2 Elsewhere
 
           %ul#social
             %li.website
-              %a(itemprop='url' href='http://anti-pattern.com')
+              %a(itemprop="url" href="http://anti-pattern.com")
                 %span Blog
             %li.tumblr
-              %a(itemprop='url' href='http://itstartswithscience.com')
+              %a(itemprop="url" href="http://itstartswithscience.com")
                 %span Tumblelog
             %li.twitter
-              %a(itemprop='url' href='http://twitter.com/brandon_weiss')
+              %a(itemprop="url" href="http://twitter.com/brandon_weiss")
                 %span Twitter
             %li.facebook
-              %a(itemprop='url' href='http://facebook.com/brandon.weiss')
+              %a(itemprop="url" href="http://facebook.com/brandon.weiss")
                 %span Facebook
             %li.foursquare
-              %a(itemprop='url' href='https://foursquare.com/brandon_weiss')
+              %a(itemprop="url" href="https://foursquare.com/brandon_weiss")
                 %span Foursquare
             %li.plancast
-              %a(itemprop='url' href='http://plancast.com/brandonweiss')
+              %a(itemprop="url" href="http://plancast.com/brandonweiss")
                 %span Plancast
             %li.github
-              %a(itemprop='url' href='http://github.com/brandonweiss')
+              %a(itemprop="url" href="http://github.com/brandonweiss")
                 %span GitHub
             %li.forrst
-              %a(itemprop='url' href='http://forrst.com/people/brandonweiss')
+              %a(itemprop="url" href="http://forrst.com/people/brandonweiss")
                 %span Forrst
             %li.lanyrd
-              %a(itemprop='url' href='http://lanyrd.com/people/brandon_weiss')
+              %a(itemprop="url" href="http://lanyrd.com/people/brandon_weiss")
                 %span Lanyrd
             %li.rdio
-              %a(itemprop='url' href='http://www.rdio.com/people/brandonweiss')
+              %a(itemprop="url" href="http://www.rdio.com/people/brandonweiss")
                 %span Rdio
             %li.vimeo
-              %a(itemprop='url' href='http://vimeo.com/brandonweiss')
+              %a(itemprop="url" href="http://vimeo.com/brandonweiss")
                 %span Vimeo
 
           %h2 Contact
@@ -103,15 +103,15 @@
           %dl
             %dt Email
             %dd
-              %a(itemprop='email' href='mailto:brandon@anti-pattern.com') brandon@anti-pattern.com
+              %a(itemprop="email" href="mailto:brandon@anti-pattern.com") brandon@anti-pattern.com
 
             %dt Jabber
             %dd
-              %a(href='xmpp:brandon@anti-pattern.com') brandon@anti-pattern.com
+              %a(href="xmpp:brandon@anti-pattern.com") brandon@anti-pattern.com
 
             %dt Twitter
             %dd
-              %a(href='http://twitter.com/brandon_weiss') @brandon_weiss
+              %a(href="http://twitter.com/brandon_weiss") @brandon_weiss
       %footer
         %p
           Inspired by <a href="http://timvandamme.com/">Tim Van Damme</a>. Icons by <a href="http://paulrobertlloyd.com/2009/06/social_media_icons">Paul Robert Lloyd</a>.
