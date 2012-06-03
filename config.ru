@@ -4,8 +4,6 @@ require "rubygems"
 require "bundler"
 Bundler.require(:default, ENV["RACK_ENV"].to_sym)
 
-require "date"
-
 map "/linked" do
   run lambda { |env|
     headers = {
@@ -18,19 +16,14 @@ map "/linked" do
 end
 
 map "/" do
-  use Rack::Static, urls: ["/images", "/javascripts", "/stylesheets"], root: Dir.pwd
+  use Rack::Static, urls: ["/assets"], root: Dir.pwd
 
   run lambda { |env|
     headers = {
       "Content-Type"  => "text/html",
       "Cache-Control" => "public, max-age=86400"
     }
-
-    birthday = Date.strptime('1985-02-04', '%F')
-    age      = (Date.today - birthday).to_i / 365
-
-    file = File.open("#{Dir.pwd}/index.haml", File::RDONLY)
-    body = Haml::Engine.new(file.read).render(Object.new, { age: age })
+    body = File.open("#{Dir.pwd}/index.html", File::RDONLY).read
 
     [200, headers, [body]]
   }
