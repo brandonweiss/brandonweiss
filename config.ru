@@ -33,7 +33,7 @@ map "/" do
       "code"          => "http://github.com/brandonweiss",
       "listen"        => "http://www.rdio.com/people/brandonweiss",
       "take pictures" => "http://webbygram.com/brandonweiss",
-      "collcet"       => "http://pinterest.com/brandonweiss",
+      "collect"       => "http://pinterest.com/brandonweiss",
       "friendly"      => "http://facebook.com/brandon.weiss",
       "email me"      => "mailto:brandon@anti-pattern.com"
     }
