@@ -1,0 +1,63 @@
+@-webkit-keyframes fade-in {
+  0%    { opacity: 0; }
+  25%   { opacity: 0; }
+  50%   { opacity: 0; }
+  75%   { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+body {
+  -webkit-animation-name:     fade-in;
+  -webkit-animation-duration: 0.75s;
+}
+
+body {
+  /*background-color: hsl(40, 100%, 93%);*/
+/*  background-color: hsla(210,18%,7%,1);
+  color:            #d6e0f1;*/
+}
+
+div {
+  width:       400px;
+  margin:      80px auto 0px auto;
+  font-family: Helvetica, Arial, sans-serif;
+  /*color:       hsl(30, 28%, 21%);*/
+}
+
+div p {
+  font-size:   20px;
+  line-height: 1.5;
+}
+
+/*div a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(rgba(0,0,0,0)));
+}
+*/
+
+a {
+  font-weight: bold;
+  color:       #0c83e0;
+  /*text-decoration: none;*/
+  /*text-shadow:     0 0 1px #000;*/
+
+/*  background-image:        -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 1)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+  /*-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,1)));*/
+}
+
+/*.sqoot      { color: hsla(332,35%,57%,1); }*/
+/*.myzeus     { color: ; }*/
+/*.expensieve { color: ; }*/
+/*.blog       { color: ; }*/
+/*.twitter    { color: hsla(202,76%,60%,1); }*/
+/*.github     { color: ; }*/
+/*.rdio       { color: hsla(205,61%,53%,1); }*/
+/*.instagram  { color: hsla(207,34%,45%,1); }*/
+/*.pinterest  { color: hsla(360,51%,47%,1); }*/
+/*.facebook   { color: hsla(217,40%,41%,1); }*/
+/*.email      { color: ; }*/

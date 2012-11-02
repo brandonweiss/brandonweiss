@@ -23,7 +23,26 @@ map "/" do
       "Content-Type"  => "text/html",
       "Cache-Control" => "public, max-age=86400"
     }
+
+    links = {
+      "Sqoot"         => "http://www.sqoot.com",
+      "MyZeus"        => "http://myze.us",
+      "Expensieve"    => "http://expensieve.com",
+      "write"         => "http://anti-pattern.com",
+      "tweet"         => "http://twitter.com/brandon_weiss",
+      "code"          => "http://github.com/brandonweiss",
+      "listen"        => "http://www.rdio.com/people/brandonweiss",
+      "take pictures" => "http://webbygram.com/brandonweiss",
+      "collcet"       => "http://pinterest.com/brandonweiss",
+      "friendly"      => "http://facebook.com/brandon.weiss",
+      "email me"      => "mailto:brandon@anti-pattern.com"
+    }
+
     body = File.open("#{Dir.pwd}/index.html", File::RDONLY).read
+    body.gsub!(/\{\{([\w\s]+)\}\}/) do |match|
+      capture = match.match(/\{\{([\w\s]+)\}\}/)[1]
+      "<a class='#{capture}' href='#{links[capture]}'>#{capture}</a>"
+    end
 
     [200, headers, [body]]
   }
