@@ -28,6 +28,7 @@ map "/" do
       "Sqoot"         => "http://www.sqoot.com",
       "MyZeus"        => "http://myze.us",
       "Expensieve"    => "http://expensieve.com",
+      "Arrival"       => "http://arrival.io",
       "write"         => "http://anti-pattern.com",
       "tweet"         => "http://twitter.com/brandon_weiss",
       "code"          => "http://github.com/brandonweiss",
