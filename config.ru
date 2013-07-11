@@ -25,18 +25,17 @@ map "/" do
     }
 
     links = {
-      "Sqoot"         => "http://www.sqoot.com",
-      "MyZeus"        => "http://myze.us",
-      "Expensieve"    => "http://expensieve.com",
-      "Arrival"       => "http://arrival.io",
-      "write"         => "http://anti-pattern.com",
-      "tweet"         => "http://twitter.com/brandon_weiss",
-      "code"          => "http://github.com/brandonweiss",
-      "listen"        => "http://www.rdio.com/people/brandonweiss",
-      "take pictures" => "http://instagram.com/brandonweiss",
-      "collect"       => "http://pinterest.com/brandonweiss",
-      "friendly"      => "http://facebook.com/brandon.weiss",
-      "email me"      => "mailto:brandon@anti-pattern.com"
+      "Sqoot"      => "http://www.sqoot.com",
+      "MyZeus"     => "http://myze.us",
+      "Expensieve" => "http://expensieve.com",
+      "Arrival"    => "http://arrival.io",
+      "write"      => "http://anti-pattern.com",
+      "tweet"      => "http://twitter.com/brandon_weiss",
+      "code"       => "http://github.com/brandonweiss",
+      "listen"     => "http://www.rdio.com/people/brandonweiss",
+      "collect"    => "http://pinterest.com/brandonweiss",
+      "friendly"   => "http://facebook.com/brandon.weiss",
+      "email me"   => "mailto:brandon@anti-pattern.com"
     }
 
     body = File.open("#{Dir.pwd}/index.html", File::RDONLY).read
