@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    rack (1.4.1)
+    rack (1.5.2)
     shotgun (0.9)
       rack (>= 1.0)
 
