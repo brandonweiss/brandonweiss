@@ -10,16 +10,21 @@ body {
   -webkit-animation-name:     fade-in;
   -webkit-animation-duration: 0.75s;
 
+  padding: 80px 0px;
   /*background-color: hsl(40, 100%, 93%);*/
 }
 
+a {
+  color:           #0c83e0;
+  text-decoration: none;
+}
+
 header {
-  margin-top: 80px;
   text-align: center;
 }
 
 .content {
-  width:      521px;
+  width:      525px;
   margin:     0px auto;
   text-align: center;
 }
@@ -67,7 +72,21 @@ header {
   text-indent: -9999px;
 }
 
-a {
-  color:           #0c83e0;
-  text-decoration: none;
+.work {
+  width:      902px;
+  margin:     0px auto;
+  padding:    0px;
+  text-align: center;
+  list-style: none;
+}
+
+.work li {
+  width:      900px;
+  height:     747px;
+  margin:     100px 0px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.work img {
+  width: 900px;
 }
