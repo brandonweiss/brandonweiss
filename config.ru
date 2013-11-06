@@ -17,12 +17,11 @@ end
 
 map "/" do
   routes = {
-    "/"                            => "index.html",
     "/founderscard"                => "founderscard.html",
     "/founderscard/manifest.plist" => "founderscard_manifest.plist"
   }
 
-  use Rack::Static, urls: routes,      root: "public"
+  use Rack::Static, urls: routes,      root: "public", index: "index.html"
   use Rack::Static, urls: ["/assets"], root: Dir.pwd
 
   run lambda { |env|
