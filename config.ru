@@ -16,16 +16,16 @@ map "/linked" do
 end
 
 map "/" do
+  routes = {
+    "/"                            => "index.html",
+    "/founderscard"                => "founderscard.html",
+    "/founderscard/manifest.plist" => "founderscard_manifest.plist"
+  }
+
+  use Rack::Static, urls: routes,      root: "public"
   use Rack::Static, urls: ["/assets"], root: Dir.pwd
 
   run lambda { |env|
-    headers = {
-      "Content-Type"  => "text/html",
-      "Cache-Control" => "public, max-age=86400"
-    }
-
-    body = File.open("#{Dir.pwd}/index.html", File::RDONLY).read
-
-    [200, headers, [body]]
+    [301, { "Location" => "http://brandonweiss.me" }, []]
   }
 end
