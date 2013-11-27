@@ -18,7 +18,8 @@ end
 map "/" do
   routes = {
     "/founderscard"                => "founderscard.html",
-    "/founderscard/manifest.plist" => "founderscard_manifest.plist"
+    "/founderscard/manifest.plist" => "founderscard_manifest.plist",
+    "/google438b0ba3cff8bcf0.html" => "google438b0ba3cff8bcf0.html"
   }
 
   use Rack::Static, urls: routes,      root: "public", index: "index.html"
