@@ -2,7 +2,9 @@ ENV["RACK_ENV"] ||= "development"
 
 require "rubygems"
 require "bundler"
-Bundler.require(:default, ENV["RACK_ENV"].to_sym)
+Bundler.setup(:default, ENV["RACK_ENV"].to_sym)
+
+require "middleman/rack"
 
 map "/linked" do
   run lambda { |env|
@@ -15,17 +17,16 @@ map "/linked" do
   }
 end
 
-map "/" do
-  routes = {
-    "/founderscard"                => "founderscard.html",
-    "/founderscard/manifest.plist" => "founderscard_manifest.plist",
-    "/google438b0ba3cff8bcf0.html" => "google438b0ba3cff8bcf0.html"
-  }
+if ENV["RACK_ENV"] == "development"
+  run Middleman.server
+else
+  require "rack/contrib/try_static"
 
-  use Rack::Static, urls: routes,      root: "public", index: "index.html"
-  use Rack::Static, urls: ["/assets"], root: Dir.pwd
+  use ::Rack::TryStatic, root: "build",
+                         urls: %w[/],
+                         try:  [".html", "index.html", "/index.html"]
 
   run lambda { |env|
-    [301, { "Location" => "http://brandonweiss.me" }, []]
+    [404, { "Content-Type" => "text/plain" }, ["File not found."]]
   }
 end

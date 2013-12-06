@@ -1,4 +1,4 @@
 .bundle
-vendor/ruby
-.powder
+build/*
 tmp/*
+vendor/ruby
