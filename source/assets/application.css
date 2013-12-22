@@ -10,8 +10,7 @@ body {
   -webkit-animation-name:     fade-in;
   -webkit-animation-duration: 0.75s;
 
-  padding: 80px 0px;
-  /*background-color: hsl(40, 100%, 93%);*/
+  font-family: "Raleway", "Open Sans", Verdana, sans-serif;
 }
 
 a {
@@ -19,28 +18,61 @@ a {
   text-decoration: none;
 }
 
-header {
-  text-align: center;
+.group:after {
+  visibility: hidden;
+  display:    block;
+  content:    "";
+  clear:      both;
+  height:     0;
 }
 
-.content {
-  width:      525px;
-  margin:     0px auto;
-  text-align: center;
+.wrapper {
+  margin: 0px auto;
+}
+
+.header .wrapper {
+  width: 765px;
+}
+
+.work .wrapper,
+.blog .wrapper,
+.footer .wrapper {
+  width: 1000px;
+}
+
+.header {
+  position:         relative;
+  padding:          130px 0px;
+  background-color: hsl(30, 21%, 95%);
+}
+
+.header .notch {
+  position:     absolute;
+  left:         50%;
+  margin-left:  -20px;
+  bottom:       -20px;
+  width:        0;
+  height:       0;
+  border-left:  20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top:   20px solid hsl(30, 21%, 95%);
+}
+
+.avatar-column,
+.bio-column {
+  float: left;
 }
 
 .avatar {
-  width:                 128px;
-  height:                128px;
-  margin:                0px auto;
-  border-radius:         64px;
-  -webkit-border-radius: 64px;
-  -moz-border-radius:    64px;
-  background-color:      #ffffff;
-  background-image:      url(/assets/pixel-portrait.png);
+  width:                 215px;
+  height:                215px;
+  margin-right:          50px;
+  border-radius:         107.5px;
+  -webkit-border-radius: 107.5px;
+  -moz-border-radius:    107.5px;
+  background-image:      url(/assets/avatar.png);
   background-repeat:     no-repeat;
-  background-position:   6px 2px;
-  background-size:       128px 128px;
+  background-size:       215px 215px;
 }
 
 .avatar img {
@@ -48,23 +80,32 @@ header {
   filter:  alpha(opacity=0);
 }
 
+.name {
+  margin:      4px 0px 8px -4px;
+  font-weight: 200;
+  font-size:   48px;
+  color:       #746f65;
+}
 
 .bio {
-  margin:      60px 0px;
+  width:       500px;
+  margin:      0px;
   text-align:  left;
-  font-size:   20px;
-  line-height: 1.5;
+  font-size:   18px;
+  line-height: 1.7;
+  color:       #746f65;
 }
 
 .links {
-  margin:     0px;
+  margin:     10px 0px 0px -10px;
   padding:    0px;
   list-style: none;
   font-size:  40px;
+  overflow:   hidden;
 }
 
 .links .link {
-  display: inline;
+  float: left;
 }
 
 .links span {
@@ -72,21 +113,111 @@ header {
   text-indent: -9999px;
 }
 
+.links .link a {
+  padding:   10px;
+  color:     hsla(37,7%,79%,1);
+  font-size: 18px;
+}
+
 .work {
-  width:      902px;
-  margin:     0px auto;
+  padding:          130px 0px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.work ol {
+  margin:     -15px -10px;
   padding:    0px;
-  text-align: center;
   list-style: none;
+  overflow:   hidden;
 }
 
-.work li {
-  width:      900px;
-  height:     747px;
-  margin:     100px 0px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+.work ol li {
+  float:   left;
+  padding: 15px 10px;
 }
 
-.work img {
-  width: 900px;
+.work a {
+  text-align:  center;
+  display:     inline-block;
+  font-weight: 200;
+  font-size:   18px;
+  color:       #746f65;
+}
+
+.work a img {
+  width:         490px;
+  height:        152px;
+  margin-bottom: 15px;
+  display:       block;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius:    4px;
+  border-radius:         4px;
+}
+
+.blog {
+  padding:          115px 0px;
+  background-color: hsl(190, 68%, 53%);
+}
+
+.blog .title {
+  margin:      0px;
+  font-size:   40px;
+  font-weight: 200;
+  color:       #ffffff;
+  float:       left;
+}
+
+.blog .date {
+  margin-top: 15px;
+  font-size:  22px;
+  color:      #91deed;
+  float:      right;
+}
+
+.blog .body {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+
+  -moz-column-gap:    50px;
+  -webkit-column-gap: 50px;
+  column-gap:         50px;
+
+  margin-top: 30px;
+  font-size:  18px;
+  color:      #ffffff;
+}
+
+.blog .body p {
+  margin-bottom: 0px;
+  line-height:   1.7;
+}
+
+.blog .body p:first-child {
+  margin-top: 0px;
+}
+
+.blog .body a {
+  color: #91deed;
+}
+
+.footer {
+  height:           75px;
+  line-height:      75px;
+  text-align:       right;
+  background-color: hsl(202, 79%, 47%);
+}
+
+.footer a {
+  color: hsl(0, 0%, 100%);
+  float: left;
+}
+
+.footer a b {
+  color: #91deed;
+}
+
+.footer .twitter-follow-button {
+  vertical-align: middle;
 }

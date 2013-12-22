@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8" />
+
+  <title>Brandon Weiss, Product Craftsman</title>
+
+  <link rel="stylesheet" href="/assets/normalize.css">
+  <link rel="stylesheet" href="/assets/application.css">
+  <link rel="stylesheet" href="/assets/symbolset/ss-social-regular.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:200,400">
+</head>
+
+<body>
+  <header class="header group">
+    <div class="wrapper">
+      <div class="avatar-column">
+        <div class="avatar">
+          <img src="/assets/avatar.png" width="215" height="215" />
+        </div>
+      </div>
+
+      <div class="bio-column">
+        <h1 class="name">Brandon Weiss</h1>
+
+        <p class="bio">
+          Product Craftsman. Obsessed with building great products.
+          Mines rubies all day long, then cuts them into beautiful gems.
+          Lives for white sand, blue water. Aspiring surfer.
+        </p>
+
+        <ul class="links">
+          <li class="link"><a href="http://anti-pattern.com" class="ss-rss"><span>Blog</span></a></li>
+          <li class="link"><a href="http://twitter.com/brandon_weiss" class="ss-twitter"><span>Twitter</span></a></li>
+          <li class="link"><a href="http://github.com/brandonweiss" class="ss-octocat"><span>GitHub</span></a></li>
+          <li class="link"><a href="http://www.rdio.com/people/brandonweiss" class="ss-rdio"><span>Rdio</span></a></li>
+          <li class="link"><a href="http://letterboxd.com/brandonweiss/" class="ss-letterboxd"><span>Letterboxd</span></a></li>
+          <li class="link"><a href="http://pinterest.com/brandonweiss" class="ss-pinterest"><span>Pinterest</span></a></li>
+          <li class="link"><a href="http://facebook.com/brandon.weiss" class="ss-facebook"><span>Facebook</span></a></li>
+          <li class="link"><a href="mailto:brandon@anti-pattern.com" class="ss-mail"><span>Email</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="notch"></div>
+  </header>
+
+  <section class="work">
+    <div class="wrapper">
+      <ol>
+        <li>
+          <a href="https://canaryup.com">
+            <img src="/assets/canary@2x.png"> Canary
+          </a>
+        </li>
+
+        <li>
+          <a href="http://arrival.io">
+            <img src="/assets/arrival@2x.png"> Arrival
+          </a>
+        </li>
+
+        <li>
+          <a href="/founderscard">
+            <img src="/assets/founderscard@2x.png"> FoundersCard Safari Extension
+          </a>
+        </li>
+
+        <li>
+          <a href="http://www.sqoot.com">
+            <img src="/assets/sqoot@2x.png"> Sqoot
+          </a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="blog">
+    <div class="wrapper">
+      <div class="group">
+        <h2 class="title"><%= latest_post_title %></h2>
+        <span class="date"><%= latest_post_date %></span>
+      </div>
+
+      <div class="body"><%= latest_post_body %></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <a href="http://anti-pattern.com">Read more on <b>Anti-pattern</b></a>
+
+      <a href="https://twitter.com/brandon_weiss" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large">Follow @brandon_weiss</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    var GoSquared = {};
+    GoSquared.acct = "GSN-131080-F";
+    (function(w){
+      function gs(){
+        w._gstc_lt = +new Date;
+        var d = document, g = d.createElement("script");
+        g.type = "text/javascript";
+        g.src = "//d1l6p2sc9645hc.cloudfront.net/tracker.js";
+        var s = d.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(g, s);
+      }
+      w.addEventListener ?
+        w.addEventListener("load", gs, false) :
+        w.attachEvent("onload", gs);
+    })(window);
+  </script>
+</body>
+</html>
