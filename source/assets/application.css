@@ -64,20 +64,15 @@ a {
 }
 
 .avatar {
-  width:                 215px;
-  height:                215px;
-  margin-right:          50px;
-  border-radius:         107.5px;
-  -webkit-border-radius: 107.5px;
-  -moz-border-radius:    107.5px;
-  background-image:      url(/assets/avatar.png);
-  background-repeat:     no-repeat;
-  background-size:       215px 215px;
+  margin-right: 50px;
 }
 
 .avatar img {
-  opacity: 0;
-  filter:  alpha(opacity=0);
+  width:                 215px;
+  height:                215px;
+  -webkit-border-radius: 107.5px;
+  -moz-border-radius:    107.5px;
+  border-radius:         107.5px;
 }
 
 .name {
