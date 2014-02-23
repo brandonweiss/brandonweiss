@@ -1,0 +1,357 @@
+$large-breakpoint:       1040px;
+$under-large-breakpoint: $large-breakpoint - 1;
+
+@keyframes fade-in {
+  0%    { opacity: 0; }
+  25%   { opacity: 0; }
+  50%   { opacity: 0; }
+  75%   { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+body {
+  animation-name:     fade-in;
+  animation-duration: 0.75s;
+
+  font-family: "Raleway", "Open Sans", Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.group:after {
+  visibility: hidden;
+  display:    block;
+  content:    "";
+  clear:      both;
+  height:     0;
+}
+
+.wrapper {
+  margin:   0px auto;
+  position: relative;
+}
+
+.header .wrapper {
+  @media screen and (min-width: $large-breakpoint) {
+    width: 765px;
+  }
+}
+
+.work .wrapper,
+.blog .wrapper,
+.footer .wrapper {
+  @media screen and (min-width: $large-breakpoint) {
+    width: 1000px;
+  }
+}
+
+.header {
+  position:         relative;
+  background-color: hsl(30, 21%, 95%);
+
+  @media screen and (max-width: $under-large-breakpoint) {
+    padding: 40px 20px;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    padding: 130px 0px;
+  }
+}
+
+.header .notch {
+  position:     absolute;
+  left:         50%;
+  margin-left:  -20px;
+  bottom:       -20px;
+  width:        0;
+  height:       0;
+  border-left:  20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top:   20px solid hsl(30, 21%, 95%);
+}
+
+.avatar-column,
+.bio-column {
+  @media screen and (min-width: $large-breakpoint) {
+    float: left;
+  }
+}
+
+.header .avatar {
+  @media screen and (max-width: $under-large-breakpoint) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin-right: 50px;
+  }
+}
+
+.header .avatar img {
+  width:         215px;
+  height:        215px;
+  border-radius: 107.5px;
+}
+
+.header .name {
+  font-weight: 200;
+  font-size:   48px;
+  color:       #746f65;
+
+  @media screen and (max-width: 320px) {
+    text-align: left;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 321px) and (max-width: $under-large-breakpoint) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin: 4px 0px 8px -4px;
+  }
+}
+
+.bio {
+  margin:      0;
+  font-size:   18px;
+  line-height: 1.7;
+  color:       #746f65;
+
+  @media screen and (max-width: 320px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 540px) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: 540px) and (max-width: $under-large-breakpoint) {
+    margin: 0px auto;
+  }
+}
+
+.links {
+  margin-top:    10px;
+  margin-bottom: 0px;
+  padding:       0;
+  list-style:    none;
+  font-size:     40px;
+  overflow:      hidden;
+
+  @media screen and (max-width: 320px) {
+    width:       290px;
+    margin-left: -10px;
+  }
+
+  @media screen and (min-width: 321px) and (max-width: $under-large-breakpoint) {
+    width:  305px;
+    margin: 0px auto;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin-left: -10px;
+  }
+
+}
+
+.links .link {
+  float: left;
+}
+
+.links span {
+  display:     inline-block;
+  text-indent: -9999px;
+}
+
+.links .link a {
+  padding:   10px;
+  color:     hsla(37,7%,79%,1);
+  font-size: 16px;
+
+  @media screen and (min-width: 375px) {
+    font-size: 18px;
+  }
+}
+
+.work {
+  background-color: hsl(0, 0%, 100%);
+
+  @media screen and (max-width: $under-large-breakpoint) {
+    padding: 40px 20px;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    padding: 130px 20px;
+  }
+}
+
+.work .projects {
+  margin:     0;
+  padding:    0;
+  list-style: none;
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin: -15px -10px;
+  }
+}
+
+.work .project {
+  @media screen and (max-width: 699px) {
+    margin: 10px 0px;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: $under-large-breakpoint) {
+    width:   46%;
+    padding: 15px 2%;
+    float:   left;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    width:   490px;
+    padding: 15px 10px;
+    float:   left;
+  }
+}
+
+.work .project:first-child {
+  @media screen and (max-width: $under-large-breakpoint) {
+    margin-top: 0px;
+  }
+}
+
+.work .project:last-child {
+  @media screen and (max-width: $under-large-breakpoint) {
+    margin-bottom: 0px;
+  }
+}
+
+.work .project a {
+  @media screen and (min-width: $large-breakpoint) {
+    text-align:  center;
+    display:     inline-block;
+    font-weight: 200;
+    font-size:   18px;
+    color:       #746f65;
+  }
+}
+
+.work .project a img {
+  width:         100%;
+  border-radius: 4px;
+}
+
+.work .project a .name {
+  margin-top: 15px;
+
+  @media screen and (max-width: $under-large-breakpoint) {
+    display: none;
+  }
+}
+
+.blog {
+  background-color: hsl(190, 68%, 53%);
+
+  @media screen and (max-width: $under-large-breakpoint) {
+    padding: 40px 20px;
+  }
+
+  @media screen and (min-width: $large-breakpoint) {
+    padding: 115px 0px;
+  }
+}
+
+.blog .title {
+  margin:      0;
+  font-size:   40px;
+  font-weight: 200;
+  color:       #ffffff;
+
+  @media screen and (min-width: $large-breakpoint) {
+    float: left;
+  }
+}
+
+.blog .date {
+  font-size:  22px;
+  color:      #91deed;
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin-top: 15px;
+    float:      right;
+  }
+}
+
+.blog .body {
+  font-size:  18px;
+  color:      #ffffff;
+
+  @media screen and (min-width: $large-breakpoint) {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+
+    -moz-column-gap:    50px;
+    -webkit-column-gap: 50px;
+    column-gap:         50px;
+
+    margin-top: 30px;
+  }
+}
+
+.blog .body p {
+  line-height: 1.7;
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin-bottom: 0;
+  }
+}
+
+.blog .body a {
+  color: #91deed;
+}
+
+.blog .body p:first-child {
+  @media screen and (min-width: $large-breakpoint) {
+    margin-top: 0;
+  }
+}
+
+.footer {
+  background-color: hsl(202, 79%, 47%);
+}
+
+.footer .call-to-action {
+  padding: 30px 20px;
+  color:   hsl(0, 0%, 100%);
+  display: inline-block;
+
+  @media screen and (min-width: $large-breakpoint) {
+    margin-left: -20px;
+  }
+}
+
+.footer .call-to-action b {
+  color: #91deed;
+}
+
+.footer .twitter-follow-button {
+  width:    50%;
+  height:   50%;
+  overflow: auto;
+  margin:   auto;
+  position: absolute;
+  top:      0;
+  right:    20px;
+  bottom:   0px;
+  left:     auto;
+
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+}

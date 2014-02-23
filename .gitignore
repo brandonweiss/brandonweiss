@@ -1,4 +1,5 @@
 .bundle
+.sass-cache
 build/*
 tmp/*
 vendor/ruby

@@ -7,9 +7,11 @@
   <title>Brandon Weiss, Product Craftsman</title>
 
   <link rel="stylesheet" href="/assets/normalize.css">
-  <link rel="stylesheet" href="/assets/application.css">
+  <link rel="stylesheet" href="/assets/home.css">
   <link rel="stylesheet" href="/assets/symbolset/ss-social-regular.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:200,400">
+
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
   <script>
     !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
@@ -23,7 +25,7 @@
 
 <body>
   <header class="header group">
-    <div class="wrapper">
+    <div class="wrapper group">
       <div class="avatar-column">
         <div class="avatar">
           <img src="/assets/avatar.png">
@@ -55,30 +57,34 @@
     <div class="notch"></div>
   </header>
 
-  <section class="work">
+  <section class="work group">
     <div class="wrapper">
-      <ol>
-        <li>
+      <ol class="projects">
+        <li class="project">
           <a href="https://canaryup.com">
-            <img src="/assets/canary@2x.png"> Canary
+            <img src="/assets/canary@2x.png">
+            <div class="name">Canary</div>
           </a>
         </li>
 
-        <li>
+        <li class="project">
           <a href="http://arrival.io">
-            <img src="/assets/arrival@2x.png"> Arrival
+            <img src="/assets/arrival@2x.png">
+            <div class="name">Arrival</div>
           </a>
         </li>
 
-        <li>
+        <li class="project">
           <a href="/founderscard">
-            <img src="/assets/founderscard@2x.png"> FoundersCard Safari Extension
+            <img src="/assets/founderscard@2x.png">
+            <div class="name">FoundersCard Safari Extension</div>
           </a>
         </li>
 
-        <li>
+        <li class="project">
           <a href="http://www.sqoot.com">
-            <img src="/assets/sqoot@2x.png"> Sqoot
+            <img src="/assets/sqoot@2x.png">
+            <div class="name">Sqoot</div>
           </a>
         </li>
       </ol>
@@ -97,8 +103,8 @@
   </section>
 
   <footer class="footer">
-    <div class="wrapper">
-      <a href="http://anti-pattern.com">Read more on <b>Anti-pattern</b></a>
+    <div class="wrapper group">
+      <a class="call-to-action" href="http://anti-pattern.com">Read more on <b>Anti-pattern</b></a>
 
       <a href="https://twitter.com/brandon_weiss" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large">Follow @brandon_weiss</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
