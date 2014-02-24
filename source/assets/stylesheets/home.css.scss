@@ -13,6 +13,12 @@ $under-large-breakpoint: $large-breakpoint - 1;
   100%  { opacity: 1; }
 }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   animation-name:     fade-in;
   animation-duration: 0.75s;
@@ -211,26 +217,26 @@ a {
   }
 
   @media screen and (min-width: 700px) and (max-width: $under-large-breakpoint) {
-    width:   46%;
-    padding: 15px 2%;
-    float:   left;
+    width:  46%;
+    margin: 15px 2%;
+    float:  left;
   }
 
   @media screen and (min-width: $large-breakpoint) {
-    width:   490px;
-    padding: 15px 10px;
-    float:   left;
+    width:  490px;
+    margin: 15px 10px;
+    float:  left;
   }
 }
 
 .work .project:first-child {
-  @media screen and (max-width: $under-large-breakpoint) {
+  @media screen and (max-width: 699px) {
     margin-top: 0px;
   }
 }
 
 .work .project:last-child {
-  @media screen and (max-width: $under-large-breakpoint) {
+  @media screen and (max-width: 699px) {
     margin-bottom: 0px;
   }
 }
@@ -296,13 +302,13 @@ a {
   color:      #ffffff;
 
   @media screen and (min-width: $large-breakpoint) {
-    -moz-column-count:    2;
     -webkit-column-count: 2;
-    column-count:         2;
+       -moz-column-count: 2;
+            column-count: 2;
 
-    -moz-column-gap:    50px;
     -webkit-column-gap: 50px;
-    column-gap:         50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
 
     margin-top: 30px;
   }
