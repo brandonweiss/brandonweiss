@@ -21,3 +21,5 @@ end
 ::Middleman::Extensions.register(:latest_post, LatestPost)
 
 activate :latest_post
+
+activate :autoprefixer, browsers: ["last 2 versions", "Explorer >= 9"]
