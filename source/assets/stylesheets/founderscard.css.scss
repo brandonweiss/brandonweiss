@@ -1,3 +1,7 @@
+//= require normalize
+//= require_self
+//= require symbolset/ss-standard
+
 body {
   background-color: hsl(15, 6%, 42%);
   font-family:      "Open Sans", verdana, sans-serif;
@@ -52,7 +56,7 @@ body {
 
 .founderscard {
   left:                0px;
-  background-image:    url("/assets/founderscard/founderscard.png");
+  background-image:    image-url("founderscard/founderscard.png");
   background-size:     110px 69px;
   background-position: center center;
   background-color:    hsla(48, 63%, 57%, 0.75);
@@ -64,7 +68,7 @@ body {
 
 .safari {
   left:                180px;
-  background-image:    url("/assets/founderscard/safari.png");
+  background-image:    image-url("founderscard/safari.png");
   background-size:     92px 100px;
   background-position: center 53px;
   background-color:    hsla(9, 65%, 62%, 0.75);
@@ -76,7 +80,7 @@ body {
 
 .heart {
   left:                360px;
-  background-image:    url("/assets/founderscard/heart.png");
+  background-image:    image-url("founderscard/heart.png");
   background-size:     88px 80px;
   background-position: center center;
   background-color:    hsla(167, 34%, 55%, 0.75);
@@ -170,7 +174,7 @@ body {
 
 .maker .twitter {
   padding:         10px 0px 10px 35px;
-  background:      url("/assets/founderscard/twitter.png") no-repeat center left;
+  background:      image-url("founderscard/twitter.png") no-repeat center left;
   background-size: 26px 22px;
   text-decoration: none;
   color:           #c0c5c4;

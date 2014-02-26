@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: "SSSocialCircle";
-  src: url('ss-social-circle.eot');
-  src: url('ss-social-circle.eot?#iefix') format('embedded-opentype'),
-       url('ss-social-circle.woff') format('woff'),
-       url('ss-social-circle.ttf')  format('truetype'),
-       url('ss-social-circle.svg#SSSocialCircle') format('svg');
+  src: font-url('symbolset/ss-social-circle.eot');
+  src: font-url('symbolset/ss-social-circle.eot?#iefix') format('embedded-opentype'),
+       font-url('symbolset/ss-social-circle.woff') format('woff'),
+       font-url('symbolset/ss-social-circle.ttf')  format('truetype'),
+       font-url('symbolset/ss-social-circle.svg#SSSocialCircle') format('svg');
   font-weight: normal;
   font-style: normal;
 }

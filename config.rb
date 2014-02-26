@@ -20,6 +20,11 @@ end
 
 ::Middleman::Extensions.register(:latest_post, LatestPost)
 
-activate :latest_post
+# Use Rails-like assets hierarchy
+set :fonts_dir,  'assets/fonts'
+set :images_dir, 'assets/images'
+set :js_dir,     'assets/javascripts'
+set :css_dir,    'assets/stylesheets'
 
+activate :latest_post
 activate :autoprefixer, browsers: ["last 2 versions", "Explorer >= 9"]

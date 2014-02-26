@@ -6,10 +6,7 @@
 
   <title>FoundersCard Safari Extension</title>
 
-  <link rel="stylesheet" href="/assets/normalize.css" />
-  <link rel="stylesheet" href="/assets/founderscard.css" />
-  <link rel="stylesheet" href="/assets/symbolset/ss-standard.css" />
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" />
+  <%= stylesheet_link_tag 'founderscard', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600', media: 'all' %>
 </head>
 
 <body>
@@ -48,7 +45,7 @@
       </span>
 
       <span class="photo">
-        <img src="/assets/founderscard/makers.png" width="80" height="80">
+        <%= image_tag 'founderscard/makers.png', width: 80, height: 80 %>
       </span>
 
       <span class="maker">
