@@ -6,7 +6,7 @@ class LatestPost < Middleman::Extension
     super
 
     app.before do
-      if app.environment == "production"
+      if app.environment == :production
         response    = HTTParty.get("http://anti-pattern.com/feed")
         latest_post = response.parsed_response["feed"]["entry"].first
       else
