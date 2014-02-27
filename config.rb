@@ -6,8 +6,19 @@ class LatestPost < Middleman::Extension
     super
 
     app.before do
-      response    = HTTParty.get("http://anti-pattern.com/feed")
-      latest_post = response.parsed_response["feed"]["entry"].first
+      if app.environment == "production"
+        response    = HTTParty.get("http://anti-pattern.com/feed")
+        latest_post = response.parsed_response["feed"]["entry"].first
+      else
+        require "active_support/core_ext/hash/indifferent_access"
+        require "time"
+
+        latest_post = {
+          title:   "Test test test test test",
+          updated: Time.now.utc.iso8601,
+          content: { "__content__" => "Lorem ipsum. " * 50 }
+        }.with_indifferent_access
+      end
 
       app.set :latest_post_title, latest_post["title"]
       app.set :latest_post_date,  Date.parse(latest_post["updated"]).strftime("%B %d, %Y")
