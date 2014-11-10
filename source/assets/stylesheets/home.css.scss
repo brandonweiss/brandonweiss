@@ -182,10 +182,22 @@ a {
   color:     hsla(37,7%,79%,1);
   font-size: 16px;
 
+  transition: color 0.15s ease;
+
   @media screen and (min-width: 375px) {
     font-size: 18px;
   }
 }
+
+.links .link [class="ss-rss"]:hover        { color: #f69942; }
+.links .link [class="ss-twitter"]:hover    { color: #55acee; }
+.links .link [class="ss-octocat"]:hover    { color: #4183c4; }
+.links .link [class="ss-dribbble"]:hover   { color: #ea4c89; }
+.links .link [class="ss-rdio"]:hover       { color: #006ed2; }
+.links .link [class="ss-letterboxd"]:hover { color: #69cd31; }
+.links .link [class="ss-pinterest"]:hover  { color: #cb2027; }
+.links .link [class="ss-facebook"]:hover   { color: #3b5998; }
+.links .link [class="ss-mail"]:hover       { color: #58bad9; }
 
 .work {
   background-color: hsl(0, 0%, 100%);
