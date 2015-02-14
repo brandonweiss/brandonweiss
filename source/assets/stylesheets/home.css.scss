@@ -42,26 +42,19 @@ a {
 }
 
 .header .wrapper {
-  @media screen and (min-width: $large-breakpoint) {
-    width: 765px;
-  }
+  max-width: 765px;
 }
 
 .work .wrapper,
 .blog .wrapper,
 .footer .wrapper {
-  @media screen and (min-width: $large-breakpoint) {
-    width: 1000px;
-  }
+  max-width: 1000px;
 }
 
 .header {
   position:         relative;
   background-color: hsl(30, 21%, 95%);
-
-  @media screen and (max-width: $under-large-breakpoint) {
-    padding: 40px 20px;
-  }
+  padding:          40px 20px;
 
   @media screen and (min-width: $large-breakpoint) {
     padding: 130px 0px;
@@ -88,9 +81,7 @@ a {
 }
 
 .header .avatar {
-  @media screen and (max-width: $under-large-breakpoint) {
-    text-align: center;
-  }
+  text-align: center;
 
   @media screen and (min-width: $large-breakpoint) {
     margin-right: 50px;
@@ -100,7 +91,7 @@ a {
 .header .avatar img {
   width:         215px;
   height:        215px;
-  border-radius: 107.5px;
+  border-radius: 50%;
 }
 
 .header .name {
@@ -126,6 +117,7 @@ a {
 }
 
 .bio {
+  max-width:   500px;
   margin:      0;
   font-size:   18px;
   line-height: 1.7;
@@ -133,10 +125,6 @@ a {
 
   @media screen and (max-width: 320px) {
     font-size: 16px;
-  }
-
-  @media screen and (min-width: 540px) {
-    width: 500px;
   }
 
   @media screen and (min-width: 540px) and (max-width: $under-large-breakpoint) {
@@ -165,7 +153,6 @@ a {
   @media screen and (min-width: $large-breakpoint) {
     margin-left: -10px;
   }
-
 }
 
 .links .link {
@@ -202,9 +189,7 @@ a {
 .work {
   background-color: hsl(0, 0%, 100%);
 
-  @media screen and (max-width: $under-large-breakpoint) {
-    padding: 40px 20px;
-  }
+  padding:  40px 20px;
 
   @media screen and (min-width: $large-breakpoint) {
     padding: 130px 20px;
@@ -222,9 +207,7 @@ a {
 }
 
 .work .project {
-  @media screen and (max-width: 699px) {
-    margin: 10px 0px;
-  }
+  margin: 10px 0px;
 
   @media screen and (min-width: 700px) and (max-width: $under-large-breakpoint) {
     width:  46%;
@@ -277,9 +260,7 @@ a {
 .blog {
   background-color: hsl(190, 68%, 53%);
 
-  @media screen and (max-width: $under-large-breakpoint) {
-    padding: 40px 20px;
-  }
+  padding: 40px 20px;
 
   @media screen and (min-width: $large-breakpoint) {
     padding: 115px 0px;
