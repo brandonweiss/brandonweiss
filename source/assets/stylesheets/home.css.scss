@@ -1,4 +1,5 @@
 //= require normalize
+//= require github
 //= require_self
 //= require symbolset/ss-social-regular
 
@@ -45,10 +46,16 @@ a {
   max-width: 765px;
 }
 
-.work .wrapper,
-.blog .wrapper,
-.footer .wrapper {
+.work .wrapper {
   max-width: 1000px;
+}
+
+.blog .wrapper {
+  max-width: 600px;
+}
+
+.footer .wrapper {
+  max-width: 800px;
 }
 
 .header {
@@ -61,7 +68,8 @@ a {
   }
 }
 
-.header .notch {
+.header .notch,
+.work .notch {
   position:     absolute;
   left:         50%;
   margin-left:  -20px;
@@ -70,7 +78,14 @@ a {
   height:       0;
   border-left:  20px solid transparent;
   border-right: 20px solid transparent;
-  border-top:   20px solid hsl(30, 21%, 95%);
+}
+
+.header .notch {
+  border-top: 20px solid hsl(30, 21%, 95%);
+}
+
+.work .notch {
+  border-top: 20px solid #ffffff;
 }
 
 .avatar-column,
@@ -187,8 +202,7 @@ a {
 .links .link [class="ss-mail"]:hover       { color: #58bad9; }
 
 .work {
-  background-color: hsl(0, 0%, 100%);
-
+  position: relative;
   padding:  40px 20px;
 
   @media screen and (min-width: $large-breakpoint) {
@@ -258,8 +272,7 @@ a {
 }
 
 .blog {
-  background-color: hsl(190, 68%, 53%);
-
+  background-color: hsl(30, 21%, 95%);
   padding: 40px 20px;
 
   @media screen and (min-width: $large-breakpoint) {
@@ -271,7 +284,7 @@ a {
   margin:      0;
   font-size:   40px;
   font-weight: 200;
-  color:       #ffffff;
+  color:       #746f65;
 
   @media screen and (min-width: $large-breakpoint) {
     float: left;
@@ -279,8 +292,8 @@ a {
 }
 
 .blog .date {
-  font-size:  22px;
-  color:      #91deed;
+  font-size:  20px;
+  color:      rgba(123, 117, 107, 0.6);
 
   @media screen and (min-width: $large-breakpoint) {
     margin-top: 15px;
@@ -289,13 +302,11 @@ a {
 }
 
 .blog .body {
-  font-size:  18px;
-  color:      #ffffff;
+  font-size: 18px;
+  color:     #746f65;
 
   @media screen and (min-width: $large-breakpoint) {
-    margin-top:   30px;
-    column-count: 2;
-    column-gap:   50px;
+    margin-top: 30px;
   }
 }
 
@@ -308,13 +319,18 @@ a {
 }
 
 .blog .body a {
-  color: #91deed;
+  color: hsl(202, 79%, 47%);
 }
 
 .blog .body p:first-child {
   @media screen and (min-width: $large-breakpoint) {
     margin-top: 0;
   }
+}
+
+.blog .highlight {
+  color:   #000000;
+  opacity: 0.75;
 }
 
 .footer {
@@ -325,10 +341,6 @@ a {
   padding: 30px 20px;
   color:   hsl(0, 0%, 100%);
   display: inline-block;
-
-  @media screen and (min-width: $large-breakpoint) {
-    margin-left: -20px;
-  }
 }
 
 .footer .call-to-action b {
