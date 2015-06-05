@@ -15,6 +15,20 @@ namespace :assets do
 
 end
 
+namespace :docker do
+
+  desc "Build Docker image"
+  task :build do
+    sh "docker build -t brandonweiss/brandonweiss ."
+  end
+
+  desc "Push Docker image"
+  task :push do
+    sh "docker push brandonweiss/brandonweiss"
+  end
+
+end
+
 desc "Update blog post"
 task :update_blog_post do
   require "httparty"

@@ -1,0 +1,5 @@
+.bundle
+.git
+.sass-cache
+build
+vendor
