@@ -15,20 +15,6 @@ namespace :assets do
 
 end
 
-namespace :docker do
-
-  desc "Build Docker image"
-  task :build do
-    sh "docker build -t brandonweiss/brandonweiss ."
-  end
-
-  desc "Push Docker image"
-  task :push do
-    sh "docker push brandonweiss/brandonweiss"
-  end
-
-end
-
 desc "Update blog post"
 task :update_blog_post do
   require "httparty"
@@ -45,4 +31,5 @@ task :update_blog_post do
   File.open("./source/latest_post.json", "w") do |file|
     file.write(post.to_json)
   end
+
 end
