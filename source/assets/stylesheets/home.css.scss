@@ -29,14 +29,6 @@ a {
   text-decoration: none;
 }
 
-.group:after {
-  visibility: hidden;
-  display:    block;
-  content:    "";
-  clear:      both;
-  height:     0;
-}
-
 .wrapper {
   margin:   0px auto;
   position: relative;
@@ -68,8 +60,9 @@ a {
   }
 }
 
-.header .notch,
-.work .notch {
+.header.notch:after,
+.work.notch:after {
+  content: '';
   position:     absolute;
   left:         50%;
   margin-left:  -20px;
@@ -80,18 +73,19 @@ a {
   border-right: 20px solid transparent;
 }
 
-.header .notch {
+.header.notch:after {
   border-top: 20px solid hsl(30, 21%, 95%);
 }
 
-.work .notch {
+.work.notch:after {
   border-top: 20px solid #ffffff;
 }
 
-.avatar-column,
-.bio-column {
-  @media screen and (min-width: $large-breakpoint) {
-    float: left;
+.header .wrapper {
+  display: flex;
+
+  @media screen and (max-width: $under-large-breakpoint) {
+    flex-direction: column;
   }
 }
 
@@ -148,30 +142,29 @@ a {
 }
 
 .links {
-  margin-top:    10px;
-  margin-bottom: 0px;
+  display: flex;
+  margin-top:    20px;
+  margin-bottom: 0;
   padding:       0;
   list-style:    none;
   font-size:     40px;
-  overflow:      hidden;
+  margin-left: -10px;
 
   @media screen and (max-width: 320px) {
-    width:       290px;
-    margin-left: -10px;
+    width: 290px;
   }
 
   @media screen and (min-width: 321px) and (max-width: $under-large-breakpoint) {
-    width:  306px;
-    margin: 0px auto;
-  }
-
-  @media screen and (min-width: $large-breakpoint) {
-    margin-left: -10px;
+    width: 306px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .links .link {
-  float: left;
+  display: inline-flex;
+  height: 40px;
 }
 
 .links span {
@@ -215,24 +208,31 @@ a {
   padding:    0;
   list-style: none;
 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 700px) and (max-width: $under-large-breakpoint) {
+    padding: 15px 2% 0 2%;
+    margin-bottom: -15px;
+  }
+
   @media screen and (min-width: $large-breakpoint) {
-    margin: -15px -10px;
+    margin-bottom: -15px;
   }
 }
 
 .work .project {
-  margin: 10px 0px;
+  margin-bottom: 10px;
 
   @media screen and (min-width: 700px) and (max-width: $under-large-breakpoint) {
-    width:  46%;
-    margin: 15px 2%;
-    float:  left;
+    width: 48%;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $large-breakpoint) {
-    width:  490px;
-    margin: 15px 10px;
-    float:  left;
+    width: 490px;
+    margin-bottom: 30px;
   }
 }
 
@@ -280,15 +280,23 @@ a {
   }
 }
 
+.blog .heading {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $large-breakpoint) {
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+}
+
 .blog .title {
+  max-width: 440px;
   margin:      0;
   font-size:   40px;
   font-weight: 200;
   color:       #746f65;
-
-  @media screen and (min-width: $large-breakpoint) {
-    float: left;
-  }
 }
 
 .blog .date {
@@ -296,8 +304,7 @@ a {
   color:      rgba(123, 117, 107, 0.6);
 
   @media screen and (min-width: $large-breakpoint) {
-    margin-top: 15px;
-    float:      right;
+    margin-bottom: 4px;
   }
 }
 
@@ -337,6 +344,12 @@ a {
   background-color: hsl(202, 79%, 47%);
 }
 
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer .call-to-action {
   padding: 30px 20px;
   color:   hsl(0, 0%, 100%);
@@ -348,15 +361,7 @@ a {
 }
 
 .footer .twitter-follow-button {
-  width:    50%;
-  height:   50%;
-  overflow: auto;
-  margin:   auto;
-  position: absolute;
-  top:      0;
-  right:    20px;
-  bottom:   0px;
-  left:     auto;
+  margin-right: 20px;
 
   @media screen and (max-width: 479px) {
     display: none;

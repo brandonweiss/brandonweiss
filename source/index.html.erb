@@ -12,15 +12,13 @@
 </head>
 
 <body>
-  <header class="header group">
-    <div class="wrapper group">
-      <div class="avatar-column">
-        <div class="avatar">
-          <%= image_tag 'avatar.png' %>
-        </div>
+  <header class="header notch">
+    <div class="wrapper">
+      <div class="avatar">
+        <%= image_tag 'avatar.png' %>
       </div>
 
-      <div class="bio-column">
+      <div>
         <h1 class="name">Brandon Weiss</h1>
 
         <p class="bio">
@@ -42,11 +40,9 @@
         </ul>
       </div>
     </div>
-
-    <div class="notch"></div>
   </header>
 
-  <section class="work group">
+  <section class="work notch">
     <div class="wrapper">
       <ol class="projects">
         <li class="project">
@@ -78,13 +74,11 @@
         </li>
       </ol>
     </div>
-
-    <div class="notch"></div>
   </section>
 
   <section class="blog">
     <div class="wrapper">
-      <div class="group">
+      <div class="heading">
         <h2 class="title"><%= latest_post_title %></h2>
         <span class="date"><%= latest_post_date %></span>
       </div>
@@ -94,7 +88,7 @@
   </section>
 
   <footer class="footer">
-    <div class="wrapper group">
+    <div class="wrapper">
       <a class="call-to-action" href="http://anti-pattern.com">Read more on <b>Anti-pattern</b></a>
 
       <a href="https://twitter.com/brandon_weiss" class="twitter-follow-button" data-show-count="false" data-lang="en" data-size="large">Follow @brandon_weiss</a>
