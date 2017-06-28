@@ -7,4 +7,4 @@ gem "rake",                   "~> 12.0.0"
 gem "httparty",               "~> 0.15.5"
 gem "middleman-autoprefixer", "~> 2.8.0"
 
-gem "thin", group: [:production]
+gem "thin", "~> 1.7.1", group: [:production]
