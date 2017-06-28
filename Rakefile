@@ -14,22 +14,3 @@ namespace :assets do
   end
 
 end
-
-desc "Update blog post"
-task :update_blog_post do
-  require "httparty"
-
-  response    = HTTParty.get("http://anti-pattern.com/feed")
-  latest_post = response.parsed_response["feed"]["entry"].first
-
-  post = {
-    title: latest_post["title"],
-    date:  latest_post["updated"],
-    body:  latest_post["content"]["__content__"]
-  }
-
-  File.open("./source/latest_post.json", "w") do |file|
-    file.write(post.to_json)
-  end
-
-end
