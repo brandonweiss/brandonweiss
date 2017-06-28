@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-ruby   "2.3.0"
+ruby   "2.3.3"
 
 gem "middleman",              "~> 3.3.12"
 gem "rack-contrib",           "~> 1.2.0"
