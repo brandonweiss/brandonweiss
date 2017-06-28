@@ -7,9 +7,9 @@ class LatestPost < Middleman::Extension
       file = File.read("./source/latest_post.json")
       post = JSON.load(file)
 
-      app.set :latest_post_title, post["title"]
-      app.set :latest_post_date,  Date.parse(post["date"]).strftime("%B %d, %Y")
-      app.set :latest_post_body,  post["body"]
+      config[:latest_post_title] = post["title"]
+      config[:latest_post_date]  = Date.parse(post["date"]).strftime("%B %d, %Y")
+      config[:latest_post_body]  = post["body"]
     end
   end
   # alias_method :included, :registered

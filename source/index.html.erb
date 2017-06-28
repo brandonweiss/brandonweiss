@@ -79,11 +79,11 @@
   <section class="blog">
     <div class="wrapper">
       <div class="heading">
-        <h2 class="title"><%= latest_post_title %></h2>
-        <span class="date"><%= latest_post_date %></span>
+        <h2 class="title"><%= config[:latest_post_title] %></h2>
+        <span class="date"><%= config[:latest_post_date] %></span>
       </div>
 
-      <div class="body"><%= latest_post_body %></div>
+      <div class="body"><%= config[:latest_post_body] %></div>
     </div>
   </section>
 
