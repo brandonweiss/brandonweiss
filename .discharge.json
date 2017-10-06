@@ -1,0 +1,12 @@
+{
+  "domain": "brandonweiss.me",
+  "upload_directory": "build",
+  "build_command": "bundle exec middleman build",
+  "index_key": "index.html",
+  "error_key": "404.html",
+  "trailing_slashes": false,
+  "cache": 3600,
+  "aws_profile": "website-deployment",
+  "aws_region": "us-west-1",
+  "dns_configured": true
+}

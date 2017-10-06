@@ -1,0 +1,16 @@
+{
+  "name": "brandonweiss.me",
+  "version": "0.0.0",
+  "description": "Asset pipeline",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonweiss/brandonweiss.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "deploy": "discharge deploy"
+  },
+  "devDependencies": {
+    "discharge": "^0.1.2"
+  }
+}
