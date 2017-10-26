@@ -4,3 +4,4 @@ set :js_dir,     "assets/javascripts"
 set :css_dir,    "assets/stylesheets"
 
 activate :autoprefixer, browsers: ["last 2 versions", "Explorer >= 9"]
+activate :directory_indexes
