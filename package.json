@@ -11,6 +11,6 @@
     "deploy": "discharge deploy"
   },
   "devDependencies": {
-    "discharge": "^0.1.2"
+    "discharge": "^0.3.0"
   }
 }

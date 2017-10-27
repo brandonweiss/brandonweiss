@@ -229,9 +229,9 @@ deep-extend@~0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.2.tgz#48b699c27e334bf89f10892be432f6e4c7d34a7f"
 
-discharge@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/discharge/-/discharge-0.1.2.tgz#d6ce69e483fa41dc801101aad1752697e42900bb"
+discharge@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/discharge/-/discharge-0.3.0.tgz#69c04ba83fd53ac992d07c43c766207440ded9d7"
   dependencies:
     aws-sdk "^2.127.0"
     execa "^0.8.0"
