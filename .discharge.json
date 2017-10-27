@@ -5,8 +5,9 @@
   "index_key": "index.html",
   "error_key": "404.html",
   "trailing_slashes": false,
-  "cache": 3600,
+  "cache": 300,
   "aws_profile": "website-deployment",
   "aws_region": "us-west-1",
+  "cdn": true,
   "dns_configured": true
 }
