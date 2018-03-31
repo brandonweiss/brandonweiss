@@ -1,0 +1,329 @@
+:root {
+  --gray-color: #555;
+
+  --transition: {
+    transition: all 100ms ease-in-out;
+  };
+
+  --transform-scale: {
+    transform: scale(1.05);
+  };
+}
+
+@keyframes fade-in {
+  0%    { opacity: 0; }
+  25%   { opacity: 0; }
+  50%   { opacity: 0; }
+  75%   { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+@keyframes upper-chevron {
+  5% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0.4em);
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
+@keyframes lower-chevron {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0.4em);
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+
+@custom-media --medium-viewport (width >= 540px);
+@custom-media --large-viewport  (width >= 1100px);
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: 21px;
+}
+
+body {
+  animation-duration: 0.75s;
+  animation-name: fade-in;
+  color: var(--gray-color);
+  font-family: "Tofino", "Open Sans", Verdana, sans-serif;
+  padding: 0 1.5rem;
+}
+
+.list-reset {
+  list-style-type: none;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 900px;
+  position: relative;
+}
+
+@media (height >= 1000px) {
+  header {
+    height: 1000px;
+  }
+}
+
+header h1 {
+  top: 30%;
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (--medium-viewport) {
+  header h1 {
+    font-size: 2.5rem
+  }
+}
+
+@media (--large-viewport) {
+  header h1 {
+    font-size: 3rem
+  }
+}
+
+header .chevrons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6%;
+}
+
+header .chevrons {
+  height: 3rem;
+  width: 3rem;
+}
+
+.chevrons polyline:last-child {
+  animation-name: upper-chevron;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+
+.chevrons polyline:first-child {
+  animation-name: lower-chevron;
+  animation-delay: 3s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.work-type {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.works {
+  display: grid;
+  grid-gap: 4rem 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+
+.work-link {
+  @apply --transition;
+}
+
+.work-link:hover {
+  color: #000000;
+}
+
+.work-link:hover .card {
+  @apply --transform-scale;
+}
+
+.card-box-outer {
+  position: relative;
+}
+
+.card-box-outer:before {
+  display: block;
+  content: "";
+  padding-top: 75%;
+}
+
+.card-box-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.card {
+  align-items: center;
+  background-color: rgb(248, 248, 248);
+  border-radius: 0.4em;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  @apply --transition;
+}
+
+.card img,
+.card svg {
+  height: 55%;
+  width: 55%;
+}
+
+.card.canary {
+  background-color: #36b4a3;
+}
+
+.card.intercom {
+  background-color: #f5f5f5;
+}
+
+.card.node svg path {
+  fill: #52a15d;
+}
+
+.card.ruby svg {
+  width: 50%;
+  height: 50%;
+}
+
+.card.ruby svg path {
+  fill: #701516;
+}
+
+.card.javascript svg {
+  width: 45%;
+  height: 45%;
+}
+
+.card.javascript svg path {
+  fill: #f1e05a;
+}
+
+.card-name {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.status {
+  background-color: white;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  padding: 0.3em 0.4em 0.4em 0.4em;
+  position: absolute;
+  top: 0.6em;
+  right: 0.6em;
+}
+
+.status svg {
+  height: 100%;
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  padding: 0.5em;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  @apply --transition;
+}
+
+.link:hover {
+  @apply --transform-scale;
+}
+
+.link svg * {
+  stroke: var(--gray-color);
+  @apply --transition;
+}
+
+.link:hover svg * {
+  stroke: #000000;
+}

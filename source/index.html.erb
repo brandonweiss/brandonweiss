@@ -6,88 +6,93 @@
 
   <title>Brandon Weiss, Product Engineer</title>
 
-  <%= stylesheet_link_tag 'home', '//fonts.googleapis.com/css?family=Raleway:200,400', media: 'all' %>
+  <%= javascript_include_tag "index" %>
+  <%= stylesheet_link_tag "index", media: "all" %>
 
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
 </head>
 
 <body>
-  <header class="header notch">
-    <div class="wrapper">
-      <div class="avatar">
-        <%= image_tag 'avatar.png' %>
-      </div>
+  <header>
+    <h1>
+      Hi, I’m Brandon, a product engineer in San Francisco.
+    </h1>
 
-      <div>
-        <h1 class="name">Brandon Weiss</h1>
-
-        <p class="bio">
-          Product Engineer. Maker of things. Obsessed with building great
-          products. Mines rubies all day long, then cuts them into beautiful
-          gems. Lives for white sand, blue water. Surfer.
-        </p>
-
-        <ul class="links">
-          <li class="link"><a href="http://anti-pattern.com" class="ss-rss"><span>Blog</span></a></li>
-          <li class="link"><a href="http://twitter.com/brandon_weiss" class="ss-twitter"><span>Twitter</span></a></li>
-          <li class="link"><a href="http://github.com/brandonweiss" class="ss-octocat"><span>GitHub</span></a></li>
-          <li class="link"><a href="https://dribbble.com/brandon_weiss" class="ss-dribbble"><span>Dribbble</span></a></li>
-          <li class="link"><a href="http://www.rdio.com/people/brandonweiss" class="ss-rdio"><span>Rdio</span></a></li>
-          <li class="link"><a href="http://letterboxd.com/brandonweiss/" class="ss-letterboxd"><span>Letterboxd</span></a></li>
-          <li class="link"><a href="http://pinterest.com/brandonweiss" class="ss-pinterest"><span>Pinterest</span></a></li>
-          <li class="link"><a href="http://facebook.com/brandon.weiss" class="ss-facebook"><span>Facebook</span></a></li>
-          <li class="link"><a href="mailto:brandon@anti-pattern.com" class="ss-mail"><span>Email</span></a></li>
-        </ul>
-      </div>
+    <div class="chevrons">
+      <%= partial "feather/chevrons-down" %>
     </div>
   </header>
 
-  <section class="work notch">
-    <div class="wrapper">
-      <ol class="projects">
-        <li class="project">
-          <a href="http://canaryup.com">
-            <%= image_tag 'projects/canary@2x.png' %>
-            <div class="name">Canary</div>
-          </a>
+  <main>
+    <ol class="works list-reset">
+      <% data.work.companies.each do |company| %>
+        <li>
+          <% if company.url %>
+            <% link_to company.url, class: "work-link" do %>
+              <%= partial("card", locals: { datum: company }) %>
+            <% end %>
+          <% else %>
+            <%= partial("card", locals: { datum: company }) %>
+          <% end %>
         </li>
+      <% end %>
+    </ol>
 
-        <li class="project">
-          <a href="http://arrival.io">
-            <%= image_tag 'projects/arrival@2x.png' %>
-            <div class="name">Arrival</div>
-          </a>
+    <%= spacer "5rem" %>
+
+    <h2 class="work-type">Projects</h2>
+
+    <%= spacer "2rem" %>
+
+    <ol class="works list-reset">
+      <% data.work.projects.each do |project| %>
+        <li>
+          <% link_to project.url, class: "work-link" do %>
+            <%= partial("card", locals: { datum: project }) %>
+          <% end %>
         </li>
+      <% end %>
+    </ol>
 
-        <li class="project">
-          <a href="/founderscard">
-            <%= image_tag 'projects/founderscard@2x.png' %>
-            <div class="name">FoundersCard Safari Extension</div>
-          </a>
+    <%= spacer "5rem" %>
+
+    <h2 class="work-type">Open-source</h2>
+
+    <%= spacer "2rem" %>
+
+    <ol class="works list-reset">
+      <% data.work.open_source.each do |open_source| %>
+        <li>
+          <% link_to open_source.url, class: "work-link" do %>
+            <%= partial("card", locals: { datum: open_source }) %>
+          <% end %>
         </li>
+      <% end %>
+    </ol>
 
-        <li class="project">
-          <a href="http://www.sqoot.com">
-            <%= image_tag 'projects/sqoot@2x.png' %>
-            <div class="name">Sqoot</div>
-          </a>
-        </li>
-      </ol>
-    </div>
-  </section>
+    <%= spacer "8rem" %>
 
-  <script type="text/javascript">
-    var _gauges = _gauges || [];
-    (function() {
-      var t   = document.createElement('script');
-      t.type  = 'text/javascript';
-      t.async = true;
-      t.id    = 'gauges-tracker';
-      t.setAttribute('data-site-id', '4d63cbd0a219863d81000002');
-      t.src = '//secure.gaug.es/track.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(t, s);
-    })();
-  </script>
+    <ul class="list-reset links">
+      <li>
+        <%= link_to partial("feather/twitter"), "https://twitter.com/brandon_weiss", class: "link" %>
+      </li>
+
+      <li>
+        <%= link_to partial("feather/instagram"), "https://instagram.com/brandonweiss/", class: "link" %>
+      </li>
+
+      <li>
+        <%= link_to partial("feather/github"), "https://github.com/brandonweiss", class: "link" %>
+      </li>
+
+      <li>
+        <%= mail_to "brandon@anti-pattern.com", partial("feather/mail"), class: "link" %>
+      </li>
+    </ul>
+  </main>
+
+  <%= spacer "4rem" %>
+
+  <%= partial "tracking" if environment?(:production) %>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<div class="work">
+  <div class="card-box-outer">
+    <div class="card-box-inner">
+      <div class="card <%= datum.id %> <%= datum.language if datum.language %>">
+        <% if datum.language.nil? %>
+          <%= image_tag datum.image_path, alt: datum.name %>
+        <% else %>
+          <%= partial("languages/#{datum.language}") %>
+        <% end %>
+
+        <% if datum.status %>
+          <div class="status">
+            <%= partial("feather/sunset") %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <%= spacer "1rem" %>
+
+  <h3 class="card-name">
+    <%= datum.name %>
+  </h3>
+
+  <%= spacer "0.25rem" %>
+
+  <p class="card-description">
+    <%= datum.description %>
+  </p>
+</div>

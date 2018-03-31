@@ -1,5 +1,5 @@
 {
-  "name": "brandonweiss.me",
+  "name": "brandonweiss",
   "version": "0.0.0",
   "description": "Asset pipeline",
   "repository": {
@@ -11,6 +11,13 @@
     "deploy": "discharge deploy"
   },
   "devDependencies": {
-    "discharge": "^0.3.0"
+    "brunch": "^2.9.1",
+    "discharge": "^0.3.0",
+    "postcss-brunch": "^2.0.5"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "webfontloader": "^1.6.28"
   }
 }

@@ -6,6 +6,12 @@
   "error_key": "404.html",
   "trailing_slashes": false,
   "cache": 300,
+  "redirects": [
+    {
+      "prefix_match": "/founderscard",
+      "destination": "/"
+    }
+  ],
   "aws_profile": "website-deployment",
   "aws_region": "us-west-1",
   "cdn": true,

@@ -1,7 +1,18 @@
-set :fonts_dir,  "assets/fonts"
-set :images_dir, "assets/images"
-set :js_dir,     "assets/javascripts"
-set :css_dir,    "assets/stylesheets"
+# frozen_string_literal: true
 
-activate :autoprefixer, browsers: ["last 2 versions", "Explorer >= 9"]
 activate :directory_indexes
+activate :livereload
+activate :external_pipeline, {
+  name: :brunch,
+  command: build? ? "brunch build" : "brunch watch",
+  source: "./tmp/dist",
+  latency: 1,
+}
+
+helpers do
+
+  def spacer(height)
+    content_tag(:div, nil, style: "height: #{height};")
+  end
+
+end
