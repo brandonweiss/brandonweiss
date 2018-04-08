@@ -141,6 +141,12 @@ header h1 {
   text-align: center;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  header h1 {
+    top: 18%;
+  }
+}
+
 @media (--medium-viewport) {
   header h1 {
     font-size: 2.5rem
@@ -158,6 +164,12 @@ header .chevrons {
   left: 50%;
   transform: translateX(-50%);
   bottom: 6%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  header .chevrons {
+    bottom: 18%;
+  }
 }
 
 header .chevrons {
