@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activesupport (5.0.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -117,7 +117,7 @@ DEPENDENCIES
   middleman-livereload (~> 3.4.6)
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.5.1p57
 
 BUNDLED WITH
    1.16.1
