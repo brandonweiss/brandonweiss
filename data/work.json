@@ -28,6 +28,13 @@
     "url": "https://arrival.io"
   }],
   "open_source": [{
+    "name": "Charge",
+    "id": "charge",
+    "description": "An opinionated, zero-config static site generator.",
+    "language": "node",
+    "image_path": "/images/feather/github.svg",
+    "url": "https://github.com/brandonweiss/charge"
+  }, {
     "name": "Discharge",
     "id": "discharge",
     "description": "A simple, easy way to deploy static websites to Amazon S3.",
