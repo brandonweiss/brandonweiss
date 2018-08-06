@@ -28,7 +28,7 @@
     "url": "https://arrival.io"
   }],
   "open_source": [{
-    "name": "discharge",
+    "name": "Discharge",
     "id": "discharge",
     "description": "A simple, easy way to deploy static websites to Amazon S3.",
     "language": "node",
