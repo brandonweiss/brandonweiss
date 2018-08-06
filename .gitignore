@@ -1,6 +1,2 @@
-.bundle
-.sass-cache
-build/*
 node_modules
 tmp/*
-vendor/ruby

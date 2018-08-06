@@ -1,23 +1,24 @@
 {
   "name": "brandonweiss",
   "version": "0.0.0",
-  "description": "Asset pipeline",
+  "description": "My personal website.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brandonweiss/brandonweiss.git"
   },
-  "license": "ISC",
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
-    "deploy": "discharge deploy"
+    "deploy": "discharge deploy",
+    "dev": "charge serve source"
   },
   "devDependencies": {
-    "brunch": "^2.9.1",
-    "discharge": "^0.3.2",
-    "postcss-brunch": "^2.0.5"
+    "charge": "https://github.com/brandonweiss/charge.git",
+    "discharge": "^0.3.2"
   },
   "dependencies": {
+    "feather-icons": "^4.7.3",
     "normalize.css": "^7.0.0",
-    "postcss-cssnext": "^3.1.0",
     "webfontloader": "^1.6.28"
   }
 }

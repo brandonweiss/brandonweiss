@@ -1,7 +1,7 @@
 {
   "domain": "brandonweiss.me",
-  "upload_directory": "build",
-  "build_command": "bundle exec middleman build",
+  "upload_directory": "tmp/build",
+  "build_command": "charge build source tmp/build",
   "index_key": "index.html",
   "error_key": "404.html",
   "trailing_slashes": false,

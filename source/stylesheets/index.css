@@ -1,13 +1,10 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./tofino.css";
+
 :root {
   --gray-color: #555;
-
-  --transition: {
-    transition: all 100ms ease-in-out;
-  };
-
-  --transform-scale: {
-    transform: scale(1.05);
-  };
+  --transition: all 100ms ease-in-out;
+  --transform-scale: scale(1.05);
 }
 
 @keyframes fade-in {
@@ -212,7 +209,7 @@ main {
 }
 
 .work-link {
-  @apply --transition;
+  transition: var(--transition);
 }
 
 .work-link:hover {
@@ -220,7 +217,7 @@ main {
 }
 
 .work-link:hover .card {
-  @apply --transform-scale;
+  transform: var(--transform-scale);
 }
 
 .card-box-outer {
@@ -248,7 +245,7 @@ main {
   display: flex;
   justify-content: center;
   height: 100%;
-  @apply --transition;
+  transition: var(--transition);
 }
 
 .card img,
@@ -324,16 +321,16 @@ main {
   width: 3rem;
   height: 3rem;
   display: block;
-  @apply --transition;
+  transition: var(--transition);
 }
 
 .link:hover {
-  @apply --transform-scale;
+  transform: var(--transform-scale);
 }
 
 .link svg * {
   stroke: var(--gray-color);
-  @apply --transition;
+  transition: var(--transition);
 }
 
 .link:hover svg * {
