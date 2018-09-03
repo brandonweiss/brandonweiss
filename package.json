@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@static/charge": "^0.2.2",
-    "discharge": "^0.3.2"
+    "@static/discharge": "^1.2.2"
   },
   "dependencies": {
     "feather-icons": "^4.7.3",
