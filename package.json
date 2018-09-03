@@ -13,7 +13,7 @@
     "dev": "charge serve source"
   },
   "devDependencies": {
-    "charge": "https://github.com/brandonweiss/charge.git",
+    "@static/charge": "^0.2.2",
     "discharge": "^0.3.2"
   },
   "dependencies": {
