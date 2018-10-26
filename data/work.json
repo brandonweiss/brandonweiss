@@ -28,6 +28,12 @@
     "url": "https://arrival.io"
   }],
   "open_source": [{
+    "name": "PromptConfig",
+    "id": "promptconfig",
+    "description": "Craft a custom terminal prompt with JSON.",
+    "image_path": "/images/open-source/promptconfig.svg",
+    "url": "https://github.com/brandonweiss/promptconfig"
+  }, {
     "name": "Charge",
     "id": "charge",
     "description": "An opinionated, zero-config static site generator.",
