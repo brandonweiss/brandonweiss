@@ -17,7 +17,7 @@
     "@static/discharge": "^1.2.2"
   },
   "dependencies": {
-    "feather-icons": "^4.7.3",
+    "feather-icons": "^4.9.0",
     "normalize.css": "^8.0.0",
     "webfontloader": "^1.6.28"
   }
