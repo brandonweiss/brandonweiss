@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "feather-icons": "^4.9.0",
-    "normalize.css": "^8.0.0",
+    "normalize.css": "^8.0.1",
     "webfontloader": "^1.6.28"
   }
 }
