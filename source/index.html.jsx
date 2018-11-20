@@ -81,6 +81,12 @@ export default ({ data, environment } = props) => (
             </li>
           })
         }
+
+        <li>
+          <a href="https://github.com/brandonweiss?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=" className="work-link">
+            <Card datum={{ id: "more", name: "And much more…" }} />
+          </a>
+        </li>
       </ol>
 
       <Spacer height="8rem" />

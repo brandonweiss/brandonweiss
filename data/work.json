@@ -76,17 +76,5 @@
     "description": "A non-polluting Rails skeleton generator.",
     "language": "ruby",
     "url": "https://github.com/brandonweiss/railyard"
-  }, {
-    "name": "redcarpet-abbreviations",
-    "id": "redcarpet-abbreviations",
-    "description": "An extension for Redcarpet that supports abbreviations.",
-    "language": "ruby",
-    "url": "https://github.com/brandonweiss/redcarpet-abbreviations"
-  }, {
-    "name": "hold_please",
-    "id": "hold_please",
-    "description": "Disable ActiveRecord callbacks in Rails for great justice!",
-    "language": "ruby",
-    "url": "https://github.com/brandonweiss/hold_please"
   }]
 }
