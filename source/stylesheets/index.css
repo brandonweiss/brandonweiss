@@ -262,28 +262,6 @@ main {
   background-color: #f5f5f5;
 }
 
-.card.node svg path {
-  fill: #52a15d;
-}
-
-.card.ruby svg {
-  width: 50%;
-  height: 50%;
-}
-
-.card.ruby svg path {
-  fill: #701516;
-}
-
-.card.javascript svg {
-  width: 45%;
-  height: 45%;
-}
-
-.card.javascript svg path {
-  fill: #f1e05a;
-}
-
 .card-name {
   font-weight: 400;
   font-size: 1.4rem;
@@ -296,9 +274,12 @@ main {
 }
 
 .status {
+  align-items: center;
   background-color: white;
   border-radius: 50%;
+  display: flex;
   height: 2em;
+  justify-content: center;
   width: 2em;
   padding: 0.3em 0.4em 0.4em 0.4em;
   position: absolute;
@@ -306,9 +287,30 @@ main {
   right: 0.6em;
 }
 
+.status i {
+  display: inherit;
+}
+
 .status svg {
   height: 100%;
   width: 100%;
+}
+
+.status.node svg path {
+  fill: #52a15d;
+}
+
+.status.ruby svg path {
+  fill: #701516;
+}
+
+.status.javascript svg {
+  width: 90%;
+  height: 90%;
+}
+
+.status.javascript svg path {
+  fill: #f1e05a;
 }
 
 .links {

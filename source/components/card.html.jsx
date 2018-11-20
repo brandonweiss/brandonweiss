@@ -2,6 +2,7 @@ import Icon from "./icon.html.jsx"
 import Ruby from "./languages/ruby.html.jsx"
 import Node from "./languages/node.html.jsx"
 import JavaScript from "./languages/javascript.html.jsx"
+import GitHub from "./languages/github.html.jsx"
 import Spacer from "./spacer.html.jsx"
 
 let languageComponent = (language) => {
@@ -21,12 +22,12 @@ export default ({ datum } = props) => {
     <div className="work">
       <div className="card-box-outer">
         <div className="card-box-inner">
-          <div className={["card", datum.id, datum.language].filter((item) => !!item).join(" ")}>
+          <div className={["card", datum.id].filter((item) => !!item).join(" ")}>
             {
-              datum.language ? (
-                languageComponent(datum.language)
-              ) : (
+              datum.image_path ? (
                 <img src={datum.image_path} alt={datum.name} />
+              ) : (
+                <GitHub />
               )
             }
 
@@ -34,6 +35,13 @@ export default ({ datum } = props) => {
               datum.status &&
                 <div className="status">
                   <Icon name="sunset" />
+                </div>
+            }
+
+            {
+              datum.language &&
+                <div className={["status", datum.language].join(" ")}>
+                  { languageComponent(datum.language) }
                 </div>
             }
           </div>
