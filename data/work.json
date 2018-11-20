@@ -1,5 +1,12 @@
 {
   "companies": [{
+    "name": "Domus",
+    "id": "domus",
+    "description": "HOA management software designed for humans.",
+    "image_path": "/images/work/domus.svg",
+    "status": null,
+    "url": "https://domus.pm"
+  }, {
     "name": "Intercom",
     "id": "intercom",
     "description": "A messaging platform helping make business personal.",
