@@ -275,16 +275,13 @@ main {
 
 .status {
   align-items: center;
-  background-color: white;
-  border-radius: 50%;
   display: flex;
-  height: 2em;
+  height: 1.5em;
   justify-content: center;
-  width: 2em;
-  padding: 0.3em 0.4em 0.4em 0.4em;
+  width: 1.5em;
   position: absolute;
-  top: 0.6em;
-  right: 0.6em;
+  top: 0.8em;
+  right: 0.8em;
 }
 
 .status i {
@@ -296,17 +293,18 @@ main {
   width: 100%;
 }
 
+.card.canary .status svg path,
+.card.canary .status svg line,
+.card.canary .status svg polyline {
+  stroke: #ffffff;
+}
+
 .status.node svg path {
   fill: #52a15d;
 }
 
 .status.ruby svg path {
   fill: #701516;
-}
-
-.status.javascript svg {
-  width: 90%;
-  height: 90%;
 }
 
 .status.javascript svg path {
