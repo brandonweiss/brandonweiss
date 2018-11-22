@@ -1,7 +1,6 @@
 import Icon from "./icon.html.jsx"
 import Ruby from "./languages/ruby.html.jsx"
 import Node from "./languages/node.html.jsx"
-import JavaScript from "./languages/javascript.html.jsx"
 import GitHub from "./languages/github.html.jsx"
 import Spacer from "./spacer.html.jsx"
 
