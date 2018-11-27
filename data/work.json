@@ -35,6 +35,12 @@
     "url": "https://arrival.io"
   }],
   "open_source": [{
+    "name": "Aversion",
+    "id": "aversion",
+    "description": "See what language versions each of your projects is using; upgrade to new versions and uninstall old versions.",
+    "image_path": "/images/open-source/aversion.svg",
+    "url": "https://github.com/brandonweiss/aversion"
+  }, {
     "name": "PromptConfig",
     "id": "promptconfig",
     "description": "Craft a custom terminal prompt with JSON.",
