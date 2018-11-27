@@ -607,6 +607,11 @@
   dependencies:
     any-observable "^0.3.0"
 
+"@sindresorhus/class-names@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/class-names/-/class-names-1.0.0.tgz#c21cddc5f5d7d676210eddcba7a6940dbb3b0c21"
+  integrity sha512-no3wbYl/zqrgkMrUHGpy+0OiYbjOJruySiPH5c0hg7/XuCH50PzJ1aSyMNqooXRuJFK3DLecWmgW8q3MnHOGYw==
+
 "@static/charge@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@static/charge/-/charge-0.3.0.tgz#618c46a6d18ca1a120c589d0f8efbb4159776e99"

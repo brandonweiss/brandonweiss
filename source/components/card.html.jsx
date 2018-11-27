@@ -1,3 +1,4 @@
+import classNames from "@sindresorhus/class-names"
 import Icon from "./icon.html.jsx"
 import Ruby from "./languages/ruby.html.jsx"
 import Node from "./languages/node.html.jsx"
@@ -21,7 +22,7 @@ export default ({ datum } = props) => {
     <div className="work">
       <div className="card-box-outer">
         <div className="card-box-inner">
-          <div className={["card", datum.id].filter((item) => !!item).join(" ")}>
+          <div className={classNames("card", datum.id)}>
             {
               datum.image_path ? (
                 <img src={datum.image_path} alt={datum.name} />
@@ -39,7 +40,7 @@ export default ({ datum } = props) => {
 
             {
               datum.language &&
-                <div className={["status", datum.language].join(" ")}>
+                <div className={classNames("status", datum.language)}>
                   { languageComponent(datum.language) }
                 </div>
             }
