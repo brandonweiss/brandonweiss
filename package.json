@@ -21,5 +21,10 @@
     "feather-icons": "^4.9.0",
     "normalize.css": "^8.0.1",
     "webfontloader": "^1.6.28"
-  }
+  },
+  "browserslist": [
+    ">0.50%",
+    "not ie 11",
+    "not op_mini all"
+  ]
 }
