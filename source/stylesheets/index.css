@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/modern-normalize";
 @import "./tofino.css";
 
 :root {
@@ -57,12 +57,6 @@
 
 @custom-media --medium-viewport (width >= 540px);
 @custom-media --large-viewport  (width >= 1100px);
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 
 a {
   color: inherit;
