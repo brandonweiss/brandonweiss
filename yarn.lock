@@ -689,10 +689,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/class-names/-/class-names-1.0.0.tgz#c21cddc5f5d7d676210eddcba7a6940dbb3b0c21"
   integrity sha512-no3wbYl/zqrgkMrUHGpy+0OiYbjOJruySiPH5c0hg7/XuCH50PzJ1aSyMNqooXRuJFK3DLecWmgW8q3MnHOGYw==
 
-"@static/charge@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@static/charge/-/charge-0.4.0.tgz#bfbc7d1cdb21130113b3ec070e0604e73321bd6f"
-  integrity sha512-KhdxNdoAU5BRcWHr6N1ncd1vjNjyt6PQPIiS3NgQnMXCGoXJ6TbWY78ni46aQ/B34IawwxaQooURzWhQuradMw==
+"@static/charge@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@static/charge/-/charge-0.5.0.tgz#ea601476ec7c48ee7f0a97250ca1b10f49f44f11"
+  integrity sha512-p3AxsX/Azm2mKxT9018njX665OMdsiokEv9edrCjCbu3hozE7ZHioaqJ9+G7xGhLxKv/IL3BbqHw0uZ91+aFrw==
   dependencies:
     "@babel/core" "^7.2.0"
     "@babel/parser" "^7.2.0"
