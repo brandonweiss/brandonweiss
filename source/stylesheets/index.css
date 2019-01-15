@@ -243,7 +243,7 @@ main {
 }
 
 .card img,
-.card svg {
+.card span {
   height: 55%;
   width: 55%;
 }
@@ -282,7 +282,7 @@ main {
   display: inherit;
 }
 
-.status svg {
+.status span {
   height: 100%;
   width: 100%;
 }

@@ -1,8 +1,8 @@
 import classNames from "@sindresorhus/class-names"
 import Icon from "./icon.html.jsx"
-import Ruby from "./languages/ruby.html.jsx"
-import Node from "./languages/node.html.jsx"
-import GitHub from "./languages/github.html.jsx"
+import Ruby from "./languages/ruby.svg"
+import Node from "./languages/node.svg"
+import GitHub from "./languages/github.svg"
 import Spacer from "./spacer.html.jsx"
 
 let languageComponent = (language) => {
