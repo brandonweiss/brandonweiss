@@ -56,7 +56,7 @@
     "name": "Discharge",
     "id": "discharge",
     "description": "A simple, easy way to deploy static websites to Amazon S3.",
-    "language": "node",
+    "image_path": "/images/open-source/discharge.svg",
     "url": "https://github.com/brandonweiss/discharge"
   }, {
     "name": "Font Raider",
