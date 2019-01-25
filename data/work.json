@@ -74,7 +74,7 @@
     "name": "sonar-js",
     "id": "sonar-js",
     "description": "A tiny library for detecting when a browser is scrolled to the bottom of a page.",
-    "image_path": "/images/open-source/sonar-js.svg",
+    "image_path": "/images/open-source/sonar-js.png",
     "url": "https://github.com/brandonweiss/sonar-js"
   }, {
     "name": "railyard",

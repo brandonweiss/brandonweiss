@@ -246,6 +246,7 @@ main {
 .card span {
   height: 55%;
   width: 55%;
+  object-fit: contain;
 }
 
 .card.canary {
