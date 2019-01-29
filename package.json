@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@sindresorhus/class-names": "^1.0.0",
-    "feather-icons": "^4.12.1",
+    "feather-icons": "^4.13.0",
     "modern-normalize": "^0.5.0",
     "webfontloader": "^1.6.28"
   },
