@@ -1,13 +1,5 @@
 {
-  "name": "brandonweiss",
-  "version": "0.0.0",
-  "description": "My personal website.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brandonweiss/brandonweiss.git"
-  },
   "private": true,
-  "license": "UNLICENSED",
   "scripts": {
     "deploy": "discharge deploy",
     "dev": "charge serve source"
