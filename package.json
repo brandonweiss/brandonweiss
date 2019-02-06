@@ -5,7 +5,7 @@
     "dev": "charge serve source"
   },
   "devDependencies": {
-    "@static/charge": "^0.5.0",
+    "@static/charge": "^0.6.0",
     "@static/discharge": "^1.2.2"
   },
   "dependencies": {
