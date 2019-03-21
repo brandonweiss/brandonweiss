@@ -4,7 +4,6 @@
   "build_command": "charge build source tmp/build",
   "index_key": "index.html",
   "error_key": "404.html",
-  "trailing_slashes": false,
   "cache": 300,
   "redirects": [
     {
