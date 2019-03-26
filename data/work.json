@@ -39,7 +39,7 @@
     "id": "charge",
     "description": "An opinionated, zero-config static site generator.",
     "image_path": "/images/open-source/charge.svg",
-    "url": "https://github.com/brandonweiss/charge"
+    "url": "https://charge.js.org"
   }, {
     "name": "Discharge",
     "id": "discharge",
