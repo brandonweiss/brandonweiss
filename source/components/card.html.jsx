@@ -22,7 +22,7 @@ export default ({ datum } = props) => {
     <div className="work">
       <div className="card-box-outer">
         <div className="card-box-inner">
-          <div className={classNames("card", datum.id)}>
+          <div className="card">
             {
               datum.image_path ? (
                 <img src={datum.image_path} alt={datum.name} />

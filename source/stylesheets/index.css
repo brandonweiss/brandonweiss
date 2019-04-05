@@ -249,14 +249,6 @@ main {
   object-fit: contain;
 }
 
-.card.canary {
-  background-color: #36b4a3;
-}
-
-.card.intercom {
-  background-color: #f5f5f5;
-}
-
 .card-name {
   font-weight: 400;
   font-size: 1.4rem;
@@ -286,12 +278,6 @@ main {
 .status span {
   height: 100%;
   width: 100%;
-}
-
-.card.canary .status svg path,
-.card.canary .status svg line,
-.card.canary .status svg polyline {
-  stroke: #ffffff;
 }
 
 .status.node svg path {
