@@ -2,7 +2,10 @@
 @import "./tofino.css";
 
 :root {
+  --black-color: #000;
   --gray-color: #555;
+  --node-color: #52a15d;
+  --ruby-color: #701516;
   --transition: all 100ms ease-in-out;
   --transform-scale: scale(1.05);
 }
@@ -207,7 +210,7 @@ main {
 }
 
 .work-link:hover {
-  color: #000000;
+  color: var(--black-color);
 }
 
 .work-link:hover .card {
@@ -281,11 +284,11 @@ main {
 }
 
 .status.node svg path {
-  fill: #52a15d;
+  fill: var(--node-color);
 }
 
 .status.ruby svg path {
-  fill: #701516;
+  fill: var(--ruby-color);
 }
 
 .links {
@@ -311,5 +314,5 @@ main {
 }
 
 .link:hover svg * {
-  stroke: #000000;
+  stroke: var(--black-color);
 }
