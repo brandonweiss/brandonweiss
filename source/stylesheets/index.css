@@ -288,10 +288,6 @@ main {
   fill: #701516;
 }
 
-.status.javascript svg path {
-  fill: #f1e05a;
-}
-
 .links {
   display: flex;
   justify-content: center;
