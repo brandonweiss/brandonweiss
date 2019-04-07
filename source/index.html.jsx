@@ -1,5 +1,6 @@
 import Icon from "./components/icon.html.jsx"
 import Card from "./components/card.html.jsx"
+import ColorScheme from "./components/color-scheme.html.jsx"
 import Spacer from "./components/spacer.html.jsx"
 import Tracking from "./components/tracking.html.jsx"
 
@@ -119,6 +120,8 @@ export default ({ data, environment } = props) => (
     </main>
 
     <Spacer height="4rem" />
+
+    <ColorScheme />
 
     <Tracking environment={environment} />
   </body>

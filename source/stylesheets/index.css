@@ -2,12 +2,22 @@
 @import "./tofino.css";
 
 :root {
-  --black-color: #000;
   --gray-color: #555;
+  --background-color: #fff;
+  --card-background-color: #f8f8f8;
+  --text-color: var(--gray-color);
+  --text-hover-color: #000;
   --node-color: #52a15d;
   --ruby-color: #701516;
   --transition: all 100ms ease-in-out;
   --transform-scale: scale(1.05);
+}
+
+body.color-scheme-is-dark {
+  --background-color: #222;
+  --card-background-color: #ddd;
+  --text-color: #ddd;
+  --text-hover-color: #fff;
 }
 
 @keyframes fade-in {
@@ -103,9 +113,11 @@ html {
 body {
   animation-duration: 0.75s;
   animation-name: fade-in;
-  color: var(--gray-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
   font-family: "Tofino", "Open Sans", Verdana, sans-serif;
   padding: 0 1.5rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 .list-reset {
@@ -210,7 +222,7 @@ main {
 }
 
 .work-link:hover {
-  color: var(--black-color);
+  color: var(--text-hover-color);
 }
 
 .work-link:hover .card {
@@ -237,7 +249,7 @@ main {
 
 .card {
   align-items: center;
-  background-color: rgb(248, 248, 248);
+  background-color: var(--card-background-color);
   border-radius: 0.4em;
   display: flex;
   justify-content: center;
@@ -283,6 +295,10 @@ main {
   width: 100%;
 }
 
+.status svg * {
+  stroke: var(--gray-color);
+}
+
 .status.node svg path {
   fill: var(--node-color);
 }
@@ -309,10 +325,27 @@ main {
 }
 
 .link svg * {
-  stroke: var(--gray-color);
+  stroke: var(--text-color);
   transition: var(--transition);
 }
 
 .link:hover svg * {
-  stroke: var(--black-color);
+  stroke: var(--text-hover-color);
+}
+
+.color-scheme-control {
+  display: none;
+}
+
+.color-scheme-label {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.color-scheme-control:checked + .color-scheme-label {
+  display: none;
 }
