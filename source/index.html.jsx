@@ -1,6 +1,6 @@
 import Icon from "./components/icon.html.jsx"
-import Card from "./components/card.html.jsx"
 import ColorScheme from "./components/color-scheme.html.jsx"
+import Section from "./components/section.html.jsx"
 import Spacer from "./components/spacer.html.jsx"
 import Tracking from "./components/tracking.html.jsx"
 
@@ -30,47 +30,21 @@ export default ({ data, environment }) => (
     </header>
 
     <main>
-      <ol className="works list-reset">
-        {
-          data.work.companies.map((company) => (
-            <Card tag="li" datum={company} key={company.id} />
-          ))
-        }
-      </ol>
+      <Section data={data.work.companies} />
 
       <Spacer height="5rem" />
 
-      <h2 className="work-type">
-        Projects
-      </h2>
-
-      <Spacer height="2rem" />
-
-      <ol className="works list-reset">
-        {
-          data.work.projects.map((project) => (
-            <Card tag="li" datum={project} key={project.id} />
-          ))
-        }
-      </ol>
+      <Section heading="Projects" data={data.work.projects} />
 
       <Spacer height="5rem" />
 
-      <h2 className="work-type">
-        Open-source
-      </h2>
-
-      <Spacer height="2rem" />
-
-      <ol className="works list-reset">
-        {
-          data.work.open_source.map((openSource) => (
-            <Card tag="li" datum={openSource} key={openSource.id} />
-          ))
-        }
-
-        <Card tag="li" datum={{ id: "more", name: "And much more…", url: "https://github.com/brandonweiss?tab=repositories&type=source" }} />
-      </ol>
+      <Section
+        heading="Open-source"
+        data={[
+          ...data.work.open_source,
+          { id: "more", name: "And much more…", url: "https://github.com/brandonweiss?tab=repositories&type=source" },
+        ]}
+      />
 
       <Spacer height="8rem" />
 
