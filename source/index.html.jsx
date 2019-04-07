@@ -4,7 +4,7 @@ import ColorScheme from "./components/color-scheme.html.jsx"
 import Spacer from "./components/spacer.html.jsx"
 import Tracking from "./components/tracking.html.jsx"
 
-export default ({ data, environment } = props) => (
+export default ({ data, environment }) => (
 
   <html>
   <head>
@@ -32,62 +32,44 @@ export default ({ data, environment } = props) => (
     <main>
       <ol className="works list-reset">
         {
-          data.work.companies.map((company) => {
-            return <li key={company.id}>
-              {
-                company.url ? (
-                  <a href={company.url} className="work-link">
-                    <Card datum={company} />
-                  </a>
-                ) : (
-                  <Card datum={company} />
-                )
-              }
-            </li>
-          })
+          data.work.companies.map((company) => (
+            <Card tag="li" datum={company} key={company.id} />
+          ))
         }
       </ol>
 
       <Spacer height="5rem" />
 
-      <h2 className="work-type">Projects</h2>
+      <h2 className="work-type">
+        Projects
+      </h2>
 
       <Spacer height="2rem" />
 
       <ol className="works list-reset">
         {
-          data.work.projects.map((project) => {
-            return <li key={project.id}>
-              <a href={project.url} className="work-link">
-                <Card datum={project} />
-              </a>
-            </li>
-          })
+          data.work.projects.map((project) => (
+            <Card tag="li" datum={project} key={project.id} />
+          ))
         }
       </ol>
 
       <Spacer height="5rem" />
 
-      <h2 className="work-type">Open-source</h2>
+      <h2 className="work-type">
+        Open-source
+      </h2>
 
       <Spacer height="2rem" />
 
       <ol className="works list-reset">
         {
-          data.work.open_source.map((openSource) => {
-            return <li key={openSource.id}>
-              <a href={openSource.url} className="work-link">
-                <Card datum={openSource} />
-              </a>
-            </li>
-          })
+          data.work.open_source.map((openSource) => (
+            <Card tag="li" datum={openSource} key={openSource.id} />
+          ))
         }
 
-        <li>
-          <a href="https://github.com/brandonweiss?utf8=%E2%9C%93&tab=repositories&q=&type=source&language=" className="work-link">
-            <Card datum={{ id: "more", name: "And much more…" }} />
-          </a>
-        </li>
+        <Card tag="li" datum={{ id: "more", name: "And much more…", url: "https://github.com/brandonweiss?tab=repositories&type=source" }} />
       </ol>
 
       <Spacer height="8rem" />

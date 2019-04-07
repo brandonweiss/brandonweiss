@@ -16,50 +16,62 @@ let languageComponent = (language) => {
   }
 }
 
-export default ({ datum } = props) => {
+const Card = ({ datum }) => (
+  <div className="work">
+    <div className="card-box-outer">
+      <div className="card-box-inner">
+        <div className="card">
+          {
+            datum.image_path ? (
+              <img src={datum.image_path} alt={datum.name} />
+            ) : (
+              <GitHub />
+            )
+          }
 
-  return (
-    <div className="work">
-      <div className="card-box-outer">
-        <div className="card-box-inner">
-          <div className="card">
-            {
-              datum.image_path ? (
-                <img src={datum.image_path} alt={datum.name} />
-              ) : (
-                <GitHub />
-              )
-            }
+          {
+            datum.status &&
+              <div className="status">
+                <Icon name="sunset" />
+              </div>
+          }
 
-            {
-              datum.status &&
-                <div className="status">
-                  <Icon name="sunset" />
-                </div>
-            }
-
-            {
-              datum.language &&
-                <div className={classNames("status", datum.language)}>
-                  { languageComponent(datum.language) }
-                </div>
-            }
-          </div>
+          {
+            datum.language &&
+              <div className={classNames("status", datum.language)}>
+                { languageComponent(datum.language) }
+              </div>
+          }
         </div>
       </div>
-
-      <Spacer height="1rem" />
-
-      <h3 className="card-name">
-        {datum.name}
-      </h3>
-
-      <Spacer height="0.25rem" />
-
-      <p className="card-description">
-        {datum.description}
-      </p>
     </div>
-  )
 
+    <Spacer height="1rem" />
+
+    <h3 className="card-name">
+      {datum.name}
+    </h3>
+
+    <Spacer height="0.25rem" />
+
+    <p className="card-description">
+      {datum.description}
+    </p>
+  </div>
+)
+
+export default ({ datum, tag }) => {
+  let Tag = `${tag}`
+
+  return <Tag>
+    {
+      datum.url ? (
+        <a href={datum.url} className="work-link">
+          <Card datum={datum} />
+        </a>
+      ) : (
+        <Card datum={datum} />
+      )
+    }
+  </Tag>
 }
