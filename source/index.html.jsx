@@ -54,6 +54,7 @@ export default ({ data, environment }) => (
     <Spacer height="4rem" />
 
     <ColorScheme />
+    <Disco />
 
     <Tracking environment={environment} />
   </body>

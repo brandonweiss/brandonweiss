@@ -39,4 +39,21 @@ window.addEventListener("DOMContentLoaded", () => {
 
   lightColorSchemeButton.addEventListener("change", (event) => changeColorScheme(event.target.value))
   darkColorSchemeButton.addEventListener("change", (event) => changeColorScheme(event.target.value))
+
+  let discoBall = document.querySelector("#disco-ball")
+  let disco = document.querySelector("#disco")
+  let audio = document.querySelector("#audio")
+  let video = document.querySelector("#video")
+
+  discoBall.addEventListener("click", () => {
+    disco.classList.add("active")
+    audio.play()
+    video.play()
+  })
+
+  disco.addEventListener("click", () => {
+    disco.classList.remove("active")
+    audio.pause()
+    video.pause()
+  })
 })
