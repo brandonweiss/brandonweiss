@@ -1,8 +1,16 @@
-import Icon from "./components/icon.html.jsx"
 import ColorScheme from "./components/color-scheme.html.jsx"
+import Disco from "./components/disco.html.jsx"
+import Header from "./components/header.html.jsx"
+import Links from "./components/links.html.jsx"
 import Section from "./components/section.html.jsx"
 import Spacer from "./components/spacer.html.jsx"
 import Tracking from "./components/tracking.html.jsx"
+import styled from "@emotion/styled"
+
+const Main = styled.main`
+  margin: 0 auto;
+  max-width: 1100px;
+`
 
 export default ({ data, environment }) => (
 
@@ -19,17 +27,9 @@ export default ({ data, environment }) => (
   </head>
 
   <body>
-    <header>
-      <h1>
-        Hi, I’m Brandon, a product engineer in San Francisco.
-      </h1>
+    <Header />
 
-      <div className="chevrons">
-        <Icon name="chevrons-down" />
-      </div>
-    </header>
-
-    <main>
+    <Main>
       <Section data={data.work.companies} />
 
       <Spacer height="5rem" />
@@ -48,32 +48,8 @@ export default ({ data, environment }) => (
 
       <Spacer height="8rem" />
 
-      <ul className="list-reset links">
-        <li>
-          <a href="https://twitter.com/brandon_weiss" className="link">
-            <Icon name="twitter" />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://instagram.com/brandonweiss/" className="link">
-            <Icon name="instagram" />
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/brandonweiss" className="link">
-            <Icon name="github" />
-          </a>
-        </li>
-
-        <li>
-          <a href="mailto:brandon@anti-pattern.com" className="link">
-            <Icon name="mail" />
-          </a>
-        </li>
-      </ul>
-    </main>
+      <Links />
+    </Main>
 
     <Spacer height="4rem" />
 
