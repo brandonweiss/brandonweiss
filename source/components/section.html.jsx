@@ -15,12 +15,12 @@ const Cards = styled.ol`
   padding: 0;
 `
 
-export default ({ data, heading }) => (
+export default ({ data, heading, id }) => (
   <React.Fragment>
     {
       heading && (
         <React.Fragment>
-          <Heading>
+          <Heading id={id}>
             {heading}
           </Heading>
 

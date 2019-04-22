@@ -34,11 +34,12 @@ export default ({ data, environment }) => (
 
       <Spacer height="5rem" />
 
-      <Section heading="Projects" data={data.work.projects} />
+      <Section id="projects" heading="Projects" data={data.work.projects} />
 
       <Spacer height="5rem" />
 
       <Section
+        id="open-source"
         heading="Open-source"
         data={[
           ...data.work.open_source,
