@@ -50,7 +50,7 @@ export default () => (
         <source src="/disco/audio.mp3" type="audio/mp3" />
       </audio>
 
-      <Video autoPlay loop muted id="video">
+      <Video autoPlay loop muted playsInline id="video">
         <source src="/disco/video.webm" type="video/webm" />
         <source src="/disco/video.mp4" type="video/mp4" />
       </Video>
