@@ -1,12 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "deploy": "discharge deploy",
     "dev": "charge serve source"
   },
   "devDependencies": {
-    "@static/charge": "^1.4.0",
-    "@static/discharge": "^2.0.1"
+    "@static/charge": "^1.4.0"
   },
   "dependencies": {
     "@emotion/core": "^10.0.10",

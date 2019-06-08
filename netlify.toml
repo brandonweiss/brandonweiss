@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/founderscard"
+  to = "/"
+  status = 301
