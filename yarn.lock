@@ -1603,9 +1603,10 @@ core-js@3.0.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.0.0.tgz#a8dbfa978d29bfc263bfb66c556d0ca924c28957"
   integrity sha512-WBmxlgH2122EzEJ6GH8o9L/FeoUKxxxZ6q6VUxoTlsE4EvbTWKJb447eyVxTEuq0LpXjlq/kCB2qgBvsYRkLvQ==
 
-core-js@^2.5.3:
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
+core-js@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.1.3.tgz#95700bca5f248f5f78c0ec63e784eca663ec4138"
+  integrity sha512-PWZ+ZfuaKf178BIAg+CRsljwjIMRV8MY00CbZczkR6Zk5LfkSkjGoaab3+bqRQWVITNZxQB7TFYz+CFcyuamvA==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -1975,13 +1976,13 @@ fault@^1.0.2:
   dependencies:
     format "^0.2.2"
 
-feather-icons@^4.22.0:
-  version "4.22.0"
-  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.22.0.tgz#03c1797ac32ed5aa618b158622b84a2e90d5fb2d"
-  integrity sha512-4zXMW+Qacm94POzFCPZpUoQ8pc+nZek46/HMEg80fJla8pMx4yLRY5nJI0PA6Nj31lbdHlRIAP7AC3ly3pWKDQ==
+feather-icons@^4.22.1:
+  version "4.22.1"
+  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.22.1.tgz#d747879ecb83e4d37d95bc9483b909aebebb2dcb"
+  integrity sha512-kup3Nxe9rHLTISgwlkXSIodKNY8FQp/8mo0wHshLNBpblli8KZHyAoxbqspJQT1IbuUfidzxEMRA6z1n4XKMPA==
   dependencies:
     classnames "^2.2.5"
-    core-js "^2.5.3"
+    core-js "^3.1.3"
 
 filename-regex@^2.0.0:
   version "2.0.1"
