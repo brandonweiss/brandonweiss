@@ -1961,10 +1961,10 @@ fault@^1.0.2:
   dependencies:
     format "^0.2.2"
 
-feather-icons@^4.23.0:
-  version "4.23.0"
-  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.23.0.tgz#9b4b727140a9bf8f266aedbfba73eba2e82649a2"
-  integrity sha512-hTDIOMsr7RLNxG4mAUAFLqSkrUfSOgWL5lPvMwyOrNEFbjlOdaXP4ImZJAR5EkI0C8F1EtfkGODGJbxgeg98Uw==
+feather-icons@^4.24.0:
+  version "4.24.0"
+  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.24.0.tgz#5b2245cfc7fd8845344ccd86a28f29fae0c350b6"
+  integrity sha512-1FdY6lVcCUjWOdHj8PuCdNTSAY1wrXoBdgQBaxftS0r8SDj9pMAcl7zDxz7W9uqsO663f4MQZYBWGOmUL+pUjg==
   dependencies:
     classnames "^2.2.5"
     core-js "^3.1.3"
