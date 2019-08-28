@@ -4,7 +4,7 @@
     "dev": "charge serve source"
   },
   "devDependencies": {
-    "@static/charge": "^1.4.1"
+    "@static/charge": "^1.4.2"
   },
   "dependencies": {
     "@emotion/core": "^10.0.16",
