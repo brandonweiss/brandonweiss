@@ -67,7 +67,7 @@
   }, {
     "name": "git-hookshot",
     "id": "git-hookshot",
-    "description": "Share git hooks in a Ruby project among everyone automagaically.",
+    "description": "Share git hooks in a Ruby project among everyone automagically.",
     "language": "ruby",
     "url": "https://github.com/brandonweiss/git-hookshot"
   }, {
