@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.27",
-    "@emotion/styled": "^10.0.23",
+    "@emotion/styled": "^10.0.27",
     "feather-icons": "^4.25.0",
     "modern-normalize": "^0.6.0",
     "webfontloader": "^1.6.28"
