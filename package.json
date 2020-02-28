@@ -7,7 +7,7 @@
     "@static/charge": "^1.5.0"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.27",
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "feather-icons": "^4.26.0",
     "modern-normalize": "^0.6.0",
