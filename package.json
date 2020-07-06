@@ -10,7 +10,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "feather-icons": "^4.28.0",
-    "modern-normalize": "^0.6.0",
+    "modern-normalize": "^0.7.0",
     "webfontloader": "^1.6.28"
   },
   "browserslist": [
