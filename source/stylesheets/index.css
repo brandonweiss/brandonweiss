@@ -21,11 +21,21 @@ body.color-scheme-is-dark {
 }
 
 @keyframes fade-in {
-  0%    { opacity: 0; }
-  25%   { opacity: 0; }
-  50%   { opacity: 0; }
-  75%   { opacity: 0; }
-  100%  { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 a {
@@ -75,4 +85,5 @@ body {
   font-family: "Tofino", "Open Sans", Verdana, sans-serif;
   padding: 0 1.5rem;
   transition: background-color 0.4s ease, color 0.4s ease;
+  position: relative;
 }

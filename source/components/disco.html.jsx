@@ -6,7 +6,7 @@ const DiscoBall = styled.div`
   height: 32px;
   width: 32px;
   position: absolute;
-  top: 62px;
+  bottom: 15px;
   right: 15px;
 `
 

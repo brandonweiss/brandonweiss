@@ -1,4 +1,3 @@
-import ColorScheme from "./components/color-scheme.html.jsx"
 import Disco from "./components/disco.html.jsx"
 import Header from "./components/header.html.jsx"
 import Links from "./components/links.html.jsx"
@@ -13,52 +12,53 @@ const Main = styled.main`
 `
 
 export default ({ data, environment }) => (
-
   <html>
-  <head>
-    <meta charSet="utf-8" />
+    <head>
+      <meta charSet="utf-8" />
 
-    <title>Brandon Weiss, Product Engineer</title>
+      <title>Brandon Weiss, Product Engineer</title>
 
-    <script src="/javascripts/index.js"></script>
-    <link href="/stylesheets/index.css" rel="stylesheet" media="all" />
+      <script src="/javascripts/index.js"></script>
+      <link href="/stylesheets/index.css" rel="stylesheet" media="all" />
 
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  </head>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </head>
 
-  <body>
-    <Header />
+    <body>
+      <Header />
 
-    <Main>
-      <Section data={data.work.companies} />
+      <Main>
+        <Section data={data.work.companies} />
 
-      <Spacer height="5rem" />
+        <Spacer height="5rem" />
 
-      <Section id="projects" heading="Projects" data={data.work.projects} />
+        <Section id="projects" heading="Projects" data={data.work.projects} />
 
-      <Spacer height="5rem" />
+        <Spacer height="5rem" />
 
-      <Section
-        id="open-source"
-        heading="Open-source"
-        data={[
-          ...data.work.open_source,
-          { id: "more", name: "And much more…", url: "https://github.com/brandonweiss?tab=repositories&type=source" },
-        ]}
-      />
+        <Section
+          id="open-source"
+          heading="Open-source"
+          data={[
+            ...data.work.open_source,
+            {
+              id: "more",
+              name: "And much more…",
+              url: "https://github.com/brandonweiss?tab=repositories&type=source",
+            },
+          ]}
+        />
 
-      <Spacer height="8rem" />
+        <Spacer height="8rem" />
 
-      <Links />
-    </Main>
+        <Links />
+      </Main>
 
-    <Spacer height="4rem" />
+      <Spacer height="4rem" />
 
-    <ColorScheme />
-    <Disco />
+      <Disco />
 
-    <Tracking environment={environment} />
-  </body>
+      <Tracking environment={environment} />
+    </body>
   </html>
-
 )
