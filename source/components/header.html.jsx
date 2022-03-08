@@ -25,19 +25,17 @@ const Heading = styled.h1`
   }
 
   @media (min-width: 540px) {
-    font-size: 2.5rem
+    font-size: 2.5rem;
   }
 
   @media (min-width: 1100px) {
-    font-size: 3rem
+    font-size: 3rem;
   }
 `
 
 export default () => (
   <Header>
-    <Heading>
-      Hi, I’m Brandon, a product engineer in San Francisco.
-    </Heading>
+    <Heading>Hi, I’m Brandon, a product engineer in Santa Cruz.</Heading>
 
     <Chevrons />
   </Header>
