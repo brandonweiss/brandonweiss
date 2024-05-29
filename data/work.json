@@ -1,6 +1,14 @@
 {
   "companies": [
     {
+      "name": "Supernormal",
+      "id": "supernormal",
+      "description": "AI meeting notes.",
+      "image_path": "/images/work/supernormal.svg",
+      "status": null,
+      "url": "https://supernormal.com"
+    },
+    {
       "name": "Ghost Inspector",
       "id": "ghost-inspector",
       "description": "Automated browser testing for websites and web apps.",
