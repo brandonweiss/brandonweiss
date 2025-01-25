@@ -1,110 +1,118 @@
 {
-  "companies": [
-    {
-      "name": "Supernormal",
-      "id": "supernormal",
-      "description": "AI meeting notes.",
-      "image_path": "/images/work/supernormal.svg",
-      "status": null,
-      "url": "https://supernormal.com"
-    },
-    {
-      "name": "Ghost Inspector",
-      "id": "ghost-inspector",
-      "description": "Automated browser testing for websites and web apps.",
-      "image_path": "/images/work/ghost-inspector.svg",
-      "status": null,
-      "url": "https://ghostinspector.com"
-    },
-    {
-      "name": "Intercom",
-      "id": "intercom",
-      "description": "A messaging platform helping make business personal.",
-      "image_path": "/images/work/intercom.svg",
-      "status": null,
-      "url": "https://www.intercom.com"
-    },
-    {
-      "name": "Canary",
-      "id": "canary",
-      "description": "Uptime monitoring that’s fun and easy.",
-      "image_path": "/images/work/canary.svg",
-      "status": "dead",
-      "url": null
-    }
-  ],
-  "projects": [
-    {
-      "name": "Toolbox",
-      "id": "toolbox",
-      "description": "Products and services for modern businesses.",
-      "image_path": "/images/projects/toolbox.svg",
-      "url": "https://toolbox.guide"
-    },
-    {
-      "name": "Arrival",
-      "id": "arrival",
-      "description": "Release cycle tracking for Apple products.",
-      "image_path": "/images/projects/arrival.svg",
-      "url": "https://arrival.io"
-    }
-  ],
-  "open_source": [
-    {
-      "name": "Charge",
-      "id": "charge",
-      "description": "An opinionated, zero-config static site generator.",
-      "image_path": "/images/open-source/charge.svg",
-      "url": "https://charge.js.org"
-    },
-    {
-      "name": "Discharge",
-      "id": "discharge",
-      "description": "A simple, easy way to deploy static websites to Amazon S3.",
-      "image_path": "/images/open-source/discharge.svg",
-      "url": "https://github.com/brandonweiss/discharge"
-    },
-    {
-      "name": "Aversion",
-      "id": "aversion",
-      "description": "See what language versions each of your projects is using; upgrade to new versions and uninstall old versions.",
-      "image_path": "/images/open-source/aversion.svg",
-      "url": "https://github.com/brandonweiss/aversion"
-    },
-    {
-      "name": "PromptConfig",
-      "id": "promptconfig",
-      "description": "Craft a custom terminal prompt with JSON.",
-      "image_path": "/images/open-source/promptconfig.svg",
-      "url": "https://github.com/brandonweiss/promptconfig"
-    },
-    {
-      "name": "Font Raider",
-      "id": "font-raider",
-      "description": "Font Raider delves deep into the depths of macOS and finds those fonts that have been hidden from you. ",
-      "language": "node",
-      "url": "https://github.com/brandonweiss/font-raider"
-    },
-    {
-      "name": "git-hookshot",
-      "id": "git-hookshot",
-      "description": "Share git hooks in a Ruby project among everyone automagically.",
-      "language": "ruby",
-      "url": "https://github.com/brandonweiss/git-hookshot"
-    },
-    {
-      "name": "sonar-js",
-      "id": "sonar-js",
-      "description": "A tiny library for detecting when a browser is scrolled to the bottom of a page.",
-      "image_path": "/images/open-source/sonar-js.png",
-      "url": "https://github.com/brandonweiss/sonar-js"
-    },
-    {
-      "name": "railyard",
-      "id": "railyard",
-      "description": "A non-polluting Rails skeleton generator.",
-      "language": "ruby",
-      "url": "https://github.com/brandonweiss/railyard"
-    }
-  ]
+	"companies": [
+		{
+			"name": "Kajabi",
+			"id": "kajabi",
+			"description": "All-in-one creator platform for digital content.",
+			"image_path": "/images/work/kajabi.svg",
+			"status": null,
+			"url": "https://kajabi.com"
+		},
+		{
+			"name": "Supernormal",
+			"id": "supernormal",
+			"description": "AI meeting notes.",
+			"image_path": "/images/work/supernormal.svg",
+			"status": null,
+			"url": "https://supernormal.com"
+		},
+		{
+			"name": "Ghost Inspector",
+			"id": "ghost-inspector",
+			"description": "Automated browser testing for websites and web apps.",
+			"image_path": "/images/work/ghost-inspector.svg",
+			"status": null,
+			"url": "https://ghostinspector.com"
+		},
+		{
+			"name": "Intercom",
+			"id": "intercom",
+			"description": "A messaging platform helping make business personal.",
+			"image_path": "/images/work/intercom.svg",
+			"status": null,
+			"url": "https://www.intercom.com"
+		},
+		{
+			"name": "Canary",
+			"id": "canary",
+			"description": "Uptime monitoring that’s fun and easy.",
+			"image_path": "/images/work/canary.svg",
+			"status": "dead",
+			"url": null
+		}
+	],
+	"projects": [
+		{
+			"name": "Toolbox",
+			"id": "toolbox",
+			"description": "Products and services for modern businesses.",
+			"image_path": "/images/projects/toolbox.svg",
+			"url": "https://toolbox.guide"
+		},
+		{
+			"name": "Arrival",
+			"id": "arrival",
+			"description": "Release cycle tracking for Apple products.",
+			"image_path": "/images/projects/arrival.svg",
+			"url": "https://arrival.io"
+		}
+	],
+	"open_source": [
+		{
+			"name": "Charge",
+			"id": "charge",
+			"description": "An opinionated, zero-config static site generator.",
+			"image_path": "/images/open-source/charge.svg",
+			"url": "https://charge.js.org"
+		},
+		{
+			"name": "Discharge",
+			"id": "discharge",
+			"description": "A simple, easy way to deploy static websites to Amazon S3.",
+			"image_path": "/images/open-source/discharge.svg",
+			"url": "https://github.com/brandonweiss/discharge"
+		},
+		{
+			"name": "Aversion",
+			"id": "aversion",
+			"description": "See what language versions each of your projects is using; upgrade to new versions and uninstall old versions.",
+			"image_path": "/images/open-source/aversion.svg",
+			"url": "https://github.com/brandonweiss/aversion"
+		},
+		{
+			"name": "PromptConfig",
+			"id": "promptconfig",
+			"description": "Craft a custom terminal prompt with JSON.",
+			"image_path": "/images/open-source/promptconfig.svg",
+			"url": "https://github.com/brandonweiss/promptconfig"
+		},
+		{
+			"name": "Font Raider",
+			"id": "font-raider",
+			"description": "Font Raider delves deep into the depths of macOS and finds those fonts that have been hidden from you. ",
+			"language": "node",
+			"url": "https://github.com/brandonweiss/font-raider"
+		},
+		{
+			"name": "git-hookshot",
+			"id": "git-hookshot",
+			"description": "Share git hooks in a Ruby project among everyone automagically.",
+			"language": "ruby",
+			"url": "https://github.com/brandonweiss/git-hookshot"
+		},
+		{
+			"name": "sonar-js",
+			"id": "sonar-js",
+			"description": "A tiny library for detecting when a browser is scrolled to the bottom of a page.",
+			"image_path": "/images/open-source/sonar-js.png",
+			"url": "https://github.com/brandonweiss/sonar-js"
+		},
+		{
+			"name": "railyard",
+			"id": "railyard",
+			"description": "A non-polluting Rails skeleton generator.",
+			"language": "ruby",
+			"url": "https://github.com/brandonweiss/railyard"
+		}
+	]
 }
